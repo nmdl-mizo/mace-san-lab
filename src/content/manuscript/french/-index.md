@@ -13,8 +13,17 @@ draft: false
 1.  KY. Liao, ..., **T. Mizoguchi**, ..., K. Suenaga  
     under preparation
 
+1.  **Y. Wang** and **T. Mizoguchi**  
+    "All-Electron Single-Atom Reference Correction for Absolute Transition Energies in Fixed-Reference PAW-XCH Calculations"  
+    submitted  [**arxiv**](https://arxiv.org/abs/2608.09216)
+
+1.  **I. Takahara** and **T. Mizoguchi**  
+    "Toward Auditable AI Scientists: A Hypothesis Evolution Protocol for LLM Agents"
+    submitted [**arxiv**](https://arxiv.org/abs/2607.09195)
+
 1.  **R. Sahashi**, **P. Y. Chen**, and **T. Mizoguchi**  
-    submitted
+    "Transient Detour and Cooperative Oxygen Exchange in the Polarization Switching of Ferroelectric Hf0.5Zr0.5O2"
+    submitted [**arxiv**](https://arxiv.org/abs/2607.26597)
 
 1.  **L. Wong**, **Y. R. Jin**, and **T. Mizoguchi**  
     submitted
@@ -64,13 +73,13 @@ draft: false
 
     **— 2026 —**  
 
-1.  "Surface Cleaning and Trap Passivation of Solution Crystallized AgBiS₂ Thin Film for Improved Solar Cell Performance"
+1.  "Surface Cleaning and Trap Passivation of Solution Crystallized AgBiS2 Thin Film for Improved Solar Cell Performance"  
      L. Cojocaru, A. Jena, H. Tamegai, M. Kamiko, **T. Mizoguchi**, T. Kubo, S. Uchida, H. Segawa  
     *ACS Appl. Ene. Mater.*, (2026) in press
 
 1.   "Vacancy-Driven Phase Separation Governs Li+ Transport Degradation in Li2−xO2 : A Computational Study Relevant to Li–O2 Batteries"  
      N. Ishihara,K. Nagita, **T. Sugiura**, Y. Mukoyama, **T. Mizoguchi**, and S. Nakanishi  
-    *J. Phys. Chem. C*, (2026) in press [**Chemrxiv**](https://chemrxiv.org/doi/full/10.26434/chemrxiv.15000496/v1)
+    *J. Phys. Chem. C*, 130 (2026) 11049-11056 [**here**](https://pubs.acs.org/jpccck/article/130/31/11049/5233906/Vacancy-Driven-Phase-Separation-Governs-Li) [**Chemrxiv**](https://chemrxiv.org/doi/full/10.26434/chemrxiv.15000496/v1)
 
 1.   "Twist-Angle Engineering of Moiré Potentials for High-Performance Ionics in Bilayer Graphene"  
      **G. Fukuzawa**, **Y. Lee**, and **T. Mizoguchi**  
@@ -98,7 +107,7 @@ draft: false
 
 1.  "Decoupling structural and bonding effects on ferroelectric switching in ScAlN via molecular dynamics under an applied electric field"  
      **R. Sahashi**, **P. Y. Chen**, and **T. Mizoguchi**  
-     *APL Materials*, 14 (2026) 061104-1-9,  [**here**](https://pubs.aip.org/aip/apm/article/14/6/061104/3393750/Decoupling-structural-and-bonding-effects-on)
+     *APL Materials*, 14 (2026) 061104-1-9, [**here**](https://pubs.aip.org/aip/apm/article/14/6/061104/3393750/Decoupling-structural-and-bonding-effects-on)
 
 1.  "Finite-size effects and energy alignment in molecular XANES under periodic boundary conditions: A systematic comparison of core-hole treatments"  
     **Y. Fujikata**, Y. Muramatsu, and **T. Mizoguchi**  
