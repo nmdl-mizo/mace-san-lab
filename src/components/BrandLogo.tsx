@@ -13,8 +13,8 @@ interface BrandLogoProps {
 
 const logoSources: Record<BrandLogoKind, { dark: string; light: string }> = {
   symbol: {
-    dark: withBasePath('/brand/nmdl-symbol-dark.png'),
-    light: withBasePath('/brand/nmdl-symbol-light.png'),
+    dark: withBasePath('/brand/nmdl-symbol-clean.png'),
+    light: withBasePath('/brand/nmdl-symbol-clean.png'),
   },
   wordmark: {
     dark: withBasePath('/brand/nmdl-logo-dark.jpg'),
@@ -29,6 +29,19 @@ export default function BrandLogo({
   label = 'NMDL / UTokyo',
   tone = 'theme',
 }: BrandLogoProps) {
+  if (kind === 'wordmark') {
+    return (
+      <span
+        aria-label={label}
+        className={`brand-logo brand-logo-wordmark brand-logo-tone-${tone} ${className}`.trim()}
+        role="img"
+      >
+        <span className="brand-wordmark-title">NMDL</span>
+        <span className="brand-wordmark-meta">playground</span>
+      </span>
+    );
+  }
+
   const sources = logoSources[kind];
 
   return (

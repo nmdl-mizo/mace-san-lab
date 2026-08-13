@@ -28,7 +28,7 @@ export default function FooterSection({ directory, meta, policies }: FooterSecti
         <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
           <div className="grid gap-12 md:grid-cols-2 xl:grid-cols-[minmax(0,1.6fr)_minmax(0,0.95fr)_minmax(0,0.8fr)]">
             <div className="max-w-2xl">
-              <BrandLogo className="w-[min(100%,22rem)] sm:w-[28rem]" />
+              <BrandLogo />
               <p className="mt-6 max-w-xl text-[1.1rem] leading-8 text-white/60">{meta.description}</p>
             </div>
 

@@ -116,8 +116,8 @@ export default function HeroShell({
 
         <div className="absolute inset-0 z-10">
           <div className="absolute inset-x-0 top-0 z-30 flex items-center justify-between px-4 py-4 sm:px-6 sm:py-5 lg:px-8">
-            <a href={homeHref} className="inline-flex w-[138px] items-center transition-opacity duration-300 hover:opacity-80 sm:w-[168px] lg:w-[178px]">
-              <BrandLogo className="w-full" tone="dark" />
+            <a href={homeHref} className="inline-flex items-center transition-opacity duration-300 hover:opacity-80">
+              <BrandLogo tone="dark" />
             </a>
             <div className="ml-auto flex items-center gap-2 sm:gap-3">
               <span className="hero-utility-label hidden font-display text-[10px] uppercase tracking-[0.25em] lg:block">
@@ -221,9 +221,9 @@ export default function HeroShell({
               initial={{ opacity: 0, scale: 0.7 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.4, duration: 0.85, ease: aeonEase }}
-              className="relative flex h-[84px] w-[84px] items-center justify-center rounded-full bg-white shadow-[0_16px_48px_rgba(0,0,0,0.35)] sm:h-[110px] sm:w-[110px] lg:h-[136px] lg:w-[136px]"
+              className="relative flex h-[84px] w-[84px] items-center justify-center overflow-hidden rounded-full border border-white/55 bg-[radial-gradient(circle_at_30%_30%,#fffdf7,#f2e8d7_70%,#e8dcc8)] shadow-[0_18px_54px_rgba(0,0,0,0.28)] sm:h-[110px] sm:w-[110px] lg:h-[136px] lg:w-[136px]"
             >
-              <BrandLogo kind="symbol" className="w-[76%]" tone="light" />
+              <BrandLogo kind="symbol" className="w-[64%] sm:w-[66%]" tone="light" />
             </motion.div>
           </div>
 

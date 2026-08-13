@@ -140,6 +140,47 @@ img {
   line-height: 0;
 }
 
+.brand-logo-wordmark {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  line-height: 1;
+}
+
+.brand-wordmark-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: clamp(1.35rem, 2vw, 1.75rem);
+  font-weight: 800;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.brand-wordmark-meta {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.34em;
+  opacity: 0.58;
+  padding-left: 0.18em;
+  text-transform: uppercase;
+}
+
+.brand-logo-wordmark.brand-logo-tone-dark {
+  color: #15263a;
+}
+
+.brand-logo-wordmark.brand-logo-tone-light {
+  color: rgba(252, 244, 228, 0.96);
+}
+
+.brand-logo-wordmark.brand-logo-tone-theme {
+  color: rgba(252, 244, 228, 0.96);
+}
+
+html[data-theme='light'] .brand-logo-wordmark.brand-logo-tone-theme {
+  color: #15263a;
+}
+
 .brand-logo-image {
   display: block;
   grid-area: 1 / 1;
