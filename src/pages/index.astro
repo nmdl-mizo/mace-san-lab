@@ -3,8 +3,10 @@ import DepartureSection from '../components/DepartureSection';
 import DiscoverySection from '../components/DiscoverySection';
 import FooterSection from '../components/FooterSection';
 import HeroShell from '../components/HeroShell';
+import MembersSection from '../components/MembersSection';
 import MissionsSection from '../components/MissionsSection';
 import StatsSection from '../components/StatsSection';
+import { featuredMember, members } from '../data/members';
 import {
   footerDirectory,
   footerMeta,
@@ -83,6 +85,9 @@ const featuredDeparture = departureEntries[0];
           bars={toSpectrumBars(featuredReport)}
           content={toDiscoveryContent(featuredReport)}
         />
+      ) : null}
+      {featuredMember ? (
+        <MembersSection client:visible featured={featuredMember} members={members.slice(1, 7)} />
       ) : null}
       <StatsSection client:visible stats={stats} />
       {featuredDeparture ? (

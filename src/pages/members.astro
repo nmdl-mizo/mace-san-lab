@@ -1,0 +1,33 @@
+---
+import CollectionIndexLayout from '../layouts/CollectionIndexLayout.astro';
+import { groupedMembers } from '../data/members';
+import { withBasePath } from '../lib/paths';
+---
+
+<CollectionIndexLayout
+  title="Members"
+  eyebrow="Laboratory People"
+  intro="A first pass at making the playground feel like a real laboratory website, not only a design experiment. This page highlights the people who make NMDL work."
+  description="Members of NMDL in the experimental playground prototype."
+>
+  <div class="space-y-14">
+    {groupedMembers.map((group) => (
+      <section>
+        <div class="font-display text-[11px] uppercase tracking-[0.28em] text-accent-blue">{group.label}</div>
+        <div class="mt-6 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          {group.members.map((member) => (
+            <article class="overflow-hidden border border-white/10 bg-white/[0.03]">
+              <img src={withBasePath(member.image)} alt={member.name} class="aspect-[4/3] w-full object-cover" />
+              <div class="p-6 sm:p-7">
+                <h2 class="break-words font-display text-[1.9rem] leading-none text-white">{member.name}</h2>
+                <p class="mt-3 text-sm uppercase tracking-[0.18em] text-accent-blue">{member.role}</p>
+                <p class="mt-5 text-[1rem] leading-7 text-white/72">{member.note}</p>
+                {member.email ? <p class="mt-5 text-sm text-white/54">{member.email}</p> : null}
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+    ))}
+  </div>
+</CollectionIndexLayout>

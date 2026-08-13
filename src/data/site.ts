@@ -68,8 +68,8 @@ export interface FooterMeta {
 export const siteNav: NavLink[] = [
   { label: 'Research', href: withBasePath('/missions/') },
   { label: 'Publications', href: withBasePath('/reports/') },
+  { label: 'Members', href: withBasePath('/members/') },
   { label: 'News', href: withBasePath('/news/') },
-  { label: 'Updates', href: withBasePath('/departures/') },
   { label: 'Environment', href: withBasePath('/technology/') },
   { label: 'Join', href: withBasePath('/science/') },
   { label: 'About', href: withBasePath('/about/') },
@@ -78,7 +78,7 @@ export const siteNav: NavLink[] = [
 export const heroLeftNav: NavLink[] = [
   { label: 'Research', href: withBasePath('/missions/') },
   { label: 'Publications', href: withBasePath('/reports/') },
-  { label: 'Join', href: withBasePath('/science/') },
+  { label: 'Members', href: withBasePath('/members/') },
 ];
 
 export const heroRightNav: NavLink[] = [
@@ -98,8 +98,8 @@ export const heroContent: HeroContent = {
     label: 'Explore Research',
   },
   secondaryCta: {
-    href: withBasePath('/reports/'),
-    label: 'View Publications',
+    href: withBasePath('/members/'),
+    label: 'Meet Members',
   },
   utilityLabel: 'EXPERIMENTAL / UNOFFICIAL',
 };
