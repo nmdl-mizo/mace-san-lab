@@ -2,6 +2,47 @@
 import CollectionIndexLayout from '../layouts/CollectionIndexLayout.astro';
 import { groupedMembers } from '../data/members';
 import { withBasePath } from '../lib/paths';
+
+const fullDirectory = [
+  {
+    label: 'Staff',
+    members: [
+      'Professor, PI, Teruyasu Mizoguchi, Ph. D',
+      'Technical Staff, Yutaka Yanaba',
+      'Administrative staff, Yoko Matsuo',
+    ],
+  },
+  {
+    label: 'Researchers',
+    members: [
+      'Takumi Nakano',
+      'Tasuku Sugiura',
+      'Yeongrok Jin, Ph. D',
+    ],
+  },
+  {
+    label: 'Students',
+    members: [
+      'D: Poyen Chen',
+      'D: Izumi Takahara',
+      'D: Yu Fujikata',
+      'D: Louis Wong',
+      'D: Youjeong Choi',
+      'D: Masahiro Watanabe',
+      'D: Ren Okubo',
+      'M: Gen Fukuzawa',
+      'M: Ibuki Okuda',
+      'M: Shuichiro Ozawa',
+      'M: Ryotaro Sahashi',
+      'M: Kazuya Miyamoto',
+      'M: Yinan Wang',
+      'M: Kohei Ueyama',
+      'M: Hitotsuyanagi Akihito',
+      'M: Yutaro Matsuki',
+      'RS: ChihLun Hsu',
+    ],
+  },
+];
 ---
 
 <CollectionIndexLayout
@@ -29,5 +70,37 @@ import { withBasePath } from '../lib/paths';
         </div>
       </section>
     ))}
+
+    <section class="border-t border-white/10 pt-14">
+      <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+        <div>
+          <div class="font-display text-[11px] uppercase tracking-[0.28em] text-accent-blue">Full Team List</div>
+          <p class="mt-4 max-w-3xl text-[1rem] leading-7 text-white/68">
+            The current homepage cards are curated for presentation. The full team list below follows the official laboratory structure more closely.
+          </p>
+        </div>
+        <a
+          href="https://nmdl-mizo.github.io/en/member"
+          target="_blank"
+          rel="noreferrer"
+          class="inline-flex items-center gap-3 font-display text-[11px] uppercase tracking-[0.24em] text-white/64 transition-colors duration-300 hover:text-accent-blue"
+        >
+          Official member page <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+
+      <div class="mt-8 grid gap-8 lg:grid-cols-3">
+        {fullDirectory.map((group) => (
+          <section class="border border-white/10 bg-white/[0.03] p-6 sm:p-7">
+            <h2 class="font-display text-[1.4rem] uppercase tracking-[0.14em] text-white">{group.label}</h2>
+            <ul class="mt-5 space-y-3 text-[1rem] leading-7 text-white/72">
+              {group.members.map((member) => (
+                <li>{member}</li>
+              ))}
+            </ul>
+          </section>
+        ))}
+      </div>
+    </section>
   </div>
 </CollectionIndexLayout>

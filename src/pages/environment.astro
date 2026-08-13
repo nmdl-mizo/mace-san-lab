@@ -1,0 +1,58 @@
+---
+import CollectionIndexLayout from '../layouts/CollectionIndexLayout.astro';
+
+const environmentSections = [
+  {
+    title: 'Research environment',
+    body: 'The laboratory space was substantially renewed in 2025. The official environment description emphasizes discussion-friendly space, many books, and whiteboards for anytime discussion rather than only visual style.',
+    bullets: ['Renovated laboratory space in 2025', 'Books and whiteboards for continuous discussion', 'A research environment built for both computation and measurement'],
+  },
+  {
+    title: 'Computing infrastructure',
+    body: 'The official site highlights Xeon clusters, GPU servers including 4090-class and newer systems, DGX Spark, and access to external supercomputers.',
+    bullets: ['Computer clusters (Xeon)', 'GPU servers', 'DGX Spark', 'External supercomputers'],
+  },
+  {
+    title: 'Codes and software',
+    body: 'The real environment page is specific about theory tools. It names CASTEP, VASP, WIEN2k, FHI-aims, Elk, OLCAO, DFT-CI, FEFF, LAMMPS, GULP, OpenMX, MLIPs, and Materials Studio.',
+    bullets: ['First-principles and spectroscopy codes', 'Machine-learning interatomic potentials', 'Materials Studio and related GUI tools'],
+  },
+  {
+    title: 'Analytical infrastructure',
+    body: 'The official page also stresses Komaba Commons Lab, Komaba Analysis Core, ARIM, and synchrotron-based work as part of the Physical AI and materials characterization stack.',
+    bullets: ['Komaba Commons Lab', 'Komaba Analysis Core', 'ARIM', 'Synchrotron facilities'],
+  },
+];
+---
+
+<CollectionIndexLayout
+  title="Environment"
+  eyebrow="Research Infrastructure"
+  intro="You were right that the previous environment page was too generic. This version is corrected toward the actual laboratory environment described on the official site."
+  description="Research environment for the NMDL playground prototype."
+>
+  <div class="space-y-8">
+    {environmentSections.map((section) => (
+      <section class="border border-white/10 bg-white/[0.03] p-7 sm:p-8">
+        <h2 class="break-words font-display text-[2rem] leading-none text-white">{section.title}</h2>
+        <p class="mt-5 max-w-4xl text-[1rem] leading-7 text-white/72">{section.body}</p>
+        <ul class="mt-5 space-y-2 text-[1rem] leading-7 text-white/72">
+          {section.bullets.map((bullet) => (
+            <li>• {bullet}</li>
+          ))}
+        </ul>
+      </section>
+    ))}
+
+    <section class="border border-white/10 bg-white/[0.03] p-7 sm:p-8">
+      <a
+        href="https://nmdl-mizo.github.io/en/environment"
+        target="_blank"
+        rel="noreferrer"
+        class="inline-flex items-center gap-3 font-display text-[11px] uppercase tracking-[0.24em] text-white/64 transition-colors duration-300 hover:text-accent-blue"
+      >
+        Official environment page <span aria-hidden="true">↗</span>
+      </a>
+    </section>
+  </div>
+</CollectionIndexLayout>

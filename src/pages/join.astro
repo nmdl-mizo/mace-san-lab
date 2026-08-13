@@ -1,0 +1,44 @@
+---
+import CollectionIndexLayout from '../layouts/CollectionIndexLayout.astro';
+
+const joinPoints = [
+  'The laboratory welcomes students aiming for graduate school, doctoral study, and serious research growth.',
+  'The official policy stresses deep understanding of atoms and electrons, serious engagement with research, and personal growth through challenging work.',
+  'Programming, theory, atomistic measurement, and AI skills can be learned after joining, as long as the research motivation is strong.',
+  'The official route for graduate students is through the Department of Materials Engineering, Graduate School of Engineering, The University of Tokyo.',
+];
+---
+
+<CollectionIndexLayout
+  title="How to Join"
+  eyebrow="Admissions and Contact"
+  intro="This page is being corrected toward the official laboratory message: join is not just a contact page, but a statement about the kind of researchers the lab wants to cultivate."
+  description="How to join NMDL in the playground prototype."
+>
+  <section class="border border-white/10 bg-white/[0.03] p-7 sm:p-8">
+    <ul class="space-y-3 text-[1rem] leading-7 text-white/72">
+      {joinPoints.map((point) => (
+        <li>• {point}</li>
+      ))}
+    </ul>
+
+    <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+      <a
+        href="https://nmdl-mizo.github.io/en/join"
+        target="_blank"
+        rel="noreferrer"
+        class="inline-flex min-h-12 items-center justify-center border border-white/14 px-8 font-display text-[11px] uppercase tracking-[0.24em] text-white transition-colors duration-300 hover:border-accent-blue hover:text-accent-blue"
+      >
+        Official join page
+      </a>
+      <a
+        href="https://www.material.t.u-tokyo.ac.jp/prospective_students/"
+        target="_blank"
+        rel="noreferrer"
+        class="inline-flex min-h-12 items-center justify-center border border-white/14 px-8 font-display text-[11px] uppercase tracking-[0.24em] text-white transition-colors duration-300 hover:border-accent-blue hover:text-accent-blue"
+      >
+        Admissions information
+      </a>
+    </div>
+  </section>
+</CollectionIndexLayout>

@@ -1,0 +1,79 @@
+---
+import CollectionIndexLayout from '../layouts/CollectionIndexLayout.astro';
+
+const alumniYears = [
+  {
+    year: '2026',
+    entries: [
+      'D: Pol Benítez Colominas (Universitat Politècnica de Catalunya)',
+    ],
+  },
+  {
+    year: '2025',
+    entries: [
+      'D: Naoto Kawaguchi',
+      'M: Riuki Nakagawa',
+      'Assistant Professor: Kiyou Shibata, Ph. D',
+      'Administrative staff: Kyoko Miyamoto',
+      'Technical Staff: Atsushi Fukuda, Ph. D',
+      'Researcher: Sangjun Lee, Ph. D',
+    ],
+  },
+  {
+    year: '2024',
+    entries: ['Researcher: Tasuku Sugiura'],
+  },
+  {
+    year: '2023',
+    entries: [
+      'D & PD: Xie Yaoshu',
+      'M: Kento Nishio',
+      'M: Yebin Lee',
+    ],
+  },
+  {
+    year: '2022 and earlier',
+    entries: [
+      'The official archive includes alumni records back to 2009, including doctoral students, master students, researchers, visitors, and staff members.',
+    ],
+  },
+];
+---
+
+<CollectionIndexLayout
+  title="Alumni"
+  eyebrow="Laboratory Archive"
+  intro="The first priority here is accuracy. This page restores the alumni axis that was missing from the experimental build and points to the full official archive."
+  description="Alumni archive for the NMDL playground prototype."
+>
+  <div class="space-y-10">
+    <section class="border border-white/10 bg-white/[0.03] p-7 sm:p-8">
+      <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+        <p class="max-w-3xl text-[1rem] leading-7 text-white/72">
+          The full alumni archive on the official site contains detailed member histories, photos, and notes across many years. This playground page is being rebuilt around that source rather than replacing it with a shallow theme version.
+        </p>
+        <a
+          href="https://nmdl-mizo.github.io/en/alumni"
+          target="_blank"
+          rel="noreferrer"
+          class="inline-flex items-center gap-3 font-display text-[11px] uppercase tracking-[0.24em] text-white/64 transition-colors duration-300 hover:text-accent-blue"
+        >
+          Full official archive <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </section>
+
+    <div class="grid gap-6 lg:grid-cols-2">
+      {alumniYears.map((yearBlock) => (
+        <section class="border border-white/10 bg-white/[0.03] p-7 sm:p-8">
+          <div class="font-display text-[1.7rem] uppercase tracking-[0.14em] text-white">{yearBlock.year}</div>
+          <ul class="mt-5 space-y-3 text-[1rem] leading-7 text-white/72">
+            {yearBlock.entries.map((entry) => (
+              <li>{entry}</li>
+            ))}
+          </ul>
+        </section>
+      ))}
+    </div>
+  </div>
+</CollectionIndexLayout>

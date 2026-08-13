@@ -1,0 +1,55 @@
+---
+import CollectionIndexLayout from '../layouts/CollectionIndexLayout.astro';
+
+const recentPapers = [
+  'Y. Wang and T. Mizoguchi, All-Electron Single-Atom Reference Correction for Absolute Transition Energies in Fixed-Reference PAW-XCH Calculations (submitted, arXiv 2608.09216)',
+  'I. Takahara and T. Mizoguchi, Toward Auditable AI Scientists: A Hypothesis Evolution Protocol for LLM Agents (submitted, arXiv 2607.09195)',
+  'R. Sahashi, P. Y. Chen, and T. Mizoguchi, Transient Detour and Cooperative Oxygen Exchange in the Polarization Switching of Ferroelectric Hf0.5Zr0.5O2 (submitted, arXiv 2607.26597)',
+  'P. Y. Chen and T. Mizoguchi, Transition from Homogeneous to Domain-Wall-Mediated Polarization Switching in BaTiO3: A Machine-Learning Molecular Dynamics Study (submitted, arXiv 2605.25485)',
+  'I. Okuda, I. Takahara, and T. Mizoguchi, Inverse Materials Design via Joint Generation of Crystal Structures and Local Electronic Descriptors (submitted, arXiv 2605.01286)',
+  'R. Okubo, Y. Fujikata, I. Takahara, and T. Mizoguchi, Generative Inverse Estimation of 3D Atomic Coordination from Near-Edge Spectra via Equivariant Diffusion Models (submitted, arXiv 2602.16133)',
+  'T. Sugiura and T. Mizoguchi, Achieving Robust Extrapolation in Materials Property Prediction via Decoupled Transfer Learning (submitted, arXiv 2602.18054)',
+  'Electric Field-Induced Phase Transitions and Hysteresis in Ferroelectric HfO2 Captured with Machine Learning Potential, Materials Today Electronics 17 (2026)',
+  'Long-range interaction effects on the phase transition, mechanical effect, and electric field response of BaTiO3 by machine learning potentials, APL Machine Learning 4 (2026)',
+  'Accelerated inorganic materials design with generative AI agents, Cell Reports Physical Science 17 (2025)',
+];
+
+const archiveLinks = [
+  { label: 'Manuscripts', href: 'https://nmdl-mizo.github.io/en/manuscript' },
+  { label: 'Invited / Keynote', href: 'https://nmdl-mizo.github.io/en/invited' },
+  { label: 'Presentations', href: 'https://nmdl-mizo.github.io/en/presentation' },
+  { label: 'Books / Proceedings', href: 'https://nmdl-mizo.github.io/en/book' },
+  { label: 'Awards', href: 'https://nmdl-mizo.github.io/en/award' },
+];
+---
+
+<CollectionIndexLayout
+  title="Publications and Achievements"
+  eyebrow="Research Output"
+  intro="The official laboratory site already has a deep achievements structure. Instead of flattening that into a few highlight cards, this playground is being corrected to expose the real archive structure."
+  description="Publications and achievements for the NMDL playground prototype."
+>
+  <div class="space-y-10">
+    <section class="grid gap-4 md:grid-cols-2 xl:grid-cols-5">
+      {archiveLinks.map((link) => (
+        <a
+          href={link.href}
+          target="_blank"
+          rel="noreferrer"
+          class="border border-white/10 bg-white/[0.03] px-5 py-5 text-center font-display text-[11px] uppercase tracking-[0.24em] text-white/72 transition-colors duration-300 hover:border-accent-blue/40 hover:text-accent-blue"
+        >
+          {link.label}
+        </a>
+      ))}
+    </section>
+
+    <section class="border border-white/10 bg-white/[0.03] p-7 sm:p-8">
+      <div class="font-display text-[11px] uppercase tracking-[0.28em] text-accent-blue">Recent manuscripts and preprints</div>
+      <ol class="mt-6 space-y-4 text-[1rem] leading-7 text-white/72">
+        {recentPapers.map((paper) => (
+          <li>{paper}</li>
+        ))}
+      </ol>
+    </section>
+  </div>
+</CollectionIndexLayout>

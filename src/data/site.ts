@@ -66,23 +66,24 @@ export interface FooterMeta {
 }
 
 export const siteNav: NavLink[] = [
-  { label: 'Research', href: withBasePath('/missions/') },
-  { label: 'Publications', href: withBasePath('/reports/') },
+  { label: 'Research', href: withBasePath('/research/') },
+  { label: 'Publications', href: withBasePath('/publications/') },
   { label: 'Members', href: withBasePath('/members/') },
+  { label: 'Alumni', href: withBasePath('/alumni/') },
   { label: 'News', href: withBasePath('/news/') },
-  { label: 'Environment', href: withBasePath('/technology/') },
-  { label: 'Join', href: withBasePath('/science/') },
+  { label: 'Environment', href: withBasePath('/environment/') },
+  { label: 'Join', href: withBasePath('/join/') },
   { label: 'About', href: withBasePath('/about/') },
 ];
 
 export const heroLeftNav: NavLink[] = [
-  { label: 'Research', href: withBasePath('/missions/') },
-  { label: 'Publications', href: withBasePath('/reports/') },
+  { label: 'Research', href: withBasePath('/research/') },
+  { label: 'Publications', href: withBasePath('/publications/') },
   { label: 'Members', href: withBasePath('/members/') },
 ];
 
 export const heroRightNav: NavLink[] = [
-  { label: 'Environment', href: withBasePath('/technology/') },
+  { label: 'Environment', href: withBasePath('/environment/') },
   { label: 'News', href: withBasePath('/news/') },
   { label: 'About', href: withBasePath('/about/') },
 ];
@@ -94,12 +95,12 @@ export const heroContent: HeroContent = {
   paragraph:
     'Nano Materials Design Laboratory explores how atomic structure, bonding, simulation, measurement, and AI can work together to create designed materials. This is an experimental cinematic prototype for reimagining the Mizoguchi Lab website.',
   primaryCta: {
-    href: withBasePath('/missions/'),
+    href: withBasePath('/research/'),
     label: 'Explore Research',
   },
   secondaryCta: {
-    href: withBasePath('/members/'),
-    label: 'Meet Members',
+    href: withBasePath('/publications/'),
+    label: 'See Publications',
   },
   utilityLabel: 'EXPERIMENTAL / UNOFFICIAL',
 };
