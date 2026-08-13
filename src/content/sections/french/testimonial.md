@@ -5,6 +5,11 @@ description: "<b><u> [過去のニュース](/news) <br>[Linkdin](https://www.li
 
 # Testimonials
 testimonials:
+  - name: "2026, Aug."
+    designation: ""
+    avatar: ""
+    content: "強誘電体材料に関するBorn Effective Charge (BEC)のデータベースを公開しました<u>[こちら](https://github.com/nmdl-mizo/BECdatabase)</u>, [Linkedin](https://www.linkedin.com/feed/update/urn:li:activity:7488775431748247553/)</u>"
+
   - name: "2026, July."
     designation: ""
     avatar: ""

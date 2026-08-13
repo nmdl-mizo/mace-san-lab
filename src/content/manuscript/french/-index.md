@@ -18,11 +18,11 @@ draft: false
     submitted  [**arxiv**](https://arxiv.org/abs/2608.09216)
 
 1.  **I. Takahara** and **T. Mizoguchi**  
-    "Toward Auditable AI Scientists: A Hypothesis Evolution Protocol for LLM Agents"
+    "Toward Auditable AI Scientists: A Hypothesis Evolution Protocol for LLM Agents"  
     submitted [**arxiv**](https://arxiv.org/abs/2607.09195)
 
 1.  **R. Sahashi**, **P. Y. Chen**, and **T. Mizoguchi**  
-    "Transient Detour and Cooperative Oxygen Exchange in the Polarization Switching of Ferroelectric Hf0.5Zr0.5O2"
+    "Transient Detour and Cooperative Oxygen Exchange in the Polarization Switching of Ferroelectric Hf0.5Zr0.5O2"  
     submitted [**arxiv**](https://arxiv.org/abs/2607.26597)
 
 1.  **L. Wong**, **Y. R. Jin**, and **T. Mizoguchi**  
