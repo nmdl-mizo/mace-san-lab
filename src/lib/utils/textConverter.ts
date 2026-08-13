@@ -1,5 +1,24 @@
 import { slug } from "github-slugger";
 import { marked } from "marked";
+import config from "../../config/config.json";
+
+const rawBasePath = config.site.base_path || "/";
+const basePath = rawBasePath === "/" ? "" : rawBasePath.replace(/\/$/, "");
+
+const withBasePath = (pathname: string) => {
+  if (!basePath) return pathname;
+  if (pathname === basePath || pathname.startsWith(`${basePath}/`)) {
+    return pathname;
+  }
+  if (pathname === "/") return basePath;
+  return `${basePath}${pathname.startsWith("/") ? pathname : `/${pathname}`}`;
+};
+
+const rewriteInternalAssetAndAnchorUrls = (html: string) => {
+  return html.replace(/\b(href|src)="(\/[^"]*)"/g, (_match, attr, url) => {
+    return `${attr}="${withBasePath(url)}"`;
+  });
+};
 
 // slugify
 export const slugify = (content: string) => {
@@ -8,7 +27,8 @@ export const slugify = (content: string) => {
 
 // markdownify
 export const markdownify = (content: string, div?: boolean) => {
-  return div ? marked.parse(content) : marked.parseInline(content);
+  const html = div ? marked.parse(content) : marked.parseInline(content);
+  return rewriteInternalAssetAndAnchorUrls(String(html));
 };
 
 // humanize
