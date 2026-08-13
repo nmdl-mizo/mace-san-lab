@@ -37,7 +37,9 @@ function isActivePath(path: string) {
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href={withBasePath('/favicon.svg')} />
-    <link rel="icon" href={withBasePath('/favicon.ico')} />
+    <link rel="icon" type="image/png" sizes="32x32" href={withBasePath('/favicon-32x32.png')} />
+    <link rel="icon" href={withBasePath('/favicon.ico')} sizes="any" />
+    <link rel="apple-touch-icon" href={withBasePath('/apple-touch-icon.png')} />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />

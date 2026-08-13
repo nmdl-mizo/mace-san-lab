@@ -29,7 +29,7 @@ export default function MembersSection({ featured, members }: MembersSectionProp
               </h2>
               <p className="mt-7 text-lg leading-8 text-white/65 sm:text-xl">
                 A research group is not only ideas and outputs. It is also people, roles, and the texture of how a
-                laboratory actually works.
+                laboratory actually works. This section now shows the full current roster with photos, not only a small sample.
               </p>
             </div>
 
@@ -59,7 +59,7 @@ export default function MembersSection({ featured, members }: MembersSectionProp
                 />
               </div>
               <div className="p-7 sm:p-8">
-                <div className="font-display text-[10px] uppercase tracking-[0.24em] text-warm-gold">Featured Member</div>
+                <div className="font-display text-[10px] uppercase tracking-[0.24em] text-warm-gold">Laboratory Lead</div>
                 <h3 className="mt-4 break-words font-display text-[2.1rem] leading-none text-white sm:text-[2.6rem]">
                   {featured.name}
                 </h3>
@@ -84,7 +84,7 @@ export default function MembersSection({ featured, members }: MembersSectionProp
                     <img
                       src={withBasePath(member.image)}
                       alt={member.name}
-                      className="h-full w-full object-cover grayscale transition duration-700 group-hover:scale-[1.03] group-hover:grayscale-0"
+                      className="h-full w-full object-cover object-top grayscale transition duration-700 group-hover:scale-[1.03] group-hover:grayscale-0"
                     />
                   </div>
                   <div className="p-5 sm:p-6">

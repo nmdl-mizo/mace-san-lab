@@ -38,13 +38,16 @@ const [missionEntries, reportEntries, departureEntries] = await Promise.all([
 
 const featuredReport = reportEntries[0];
 const featuredDeparture = departureEntries[0];
+const memberGallery = featuredMember ? members.filter((member) => member.name !== featuredMember.name) : members;
 ---
 
 <html lang="en" class="bg-page-bg">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href={withBasePath('/favicon.svg')} />
-    <link rel="icon" href={withBasePath('/favicon.ico')} />
+    <link rel="icon" type="image/png" sizes="32x32" href={withBasePath('/favicon-32x32.png')} />
+    <link rel="icon" href={withBasePath('/favicon.ico')} sizes="any" />
+    <link rel="apple-touch-icon" href={withBasePath('/apple-touch-icon.png')} />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <meta name="robots" content="noindex,nofollow" />
@@ -86,9 +89,7 @@ const featuredDeparture = departureEntries[0];
           content={toDiscoveryContent(featuredReport)}
         />
       ) : null}
-      {featuredMember ? (
-        <MembersSection client:visible featured={featuredMember} members={members.slice(1, 7)} />
-      ) : null}
+      {featuredMember ? <MembersSection client:visible featured={featuredMember} members={memberGallery} /> : null}
       <StatsSection client:visible stats={stats} />
       {featuredDeparture ? (
         <DepartureSection
