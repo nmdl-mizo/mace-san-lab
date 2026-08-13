@@ -9,7 +9,11 @@ import "@/styles/main.scss";
 import { AstroFont } from "astro-font";
 import { ViewTransitions } from "astro:transitions";
 import SearchModal from "./helpers/SearchModal";
-import { getLangFromUrl } from "@/lib/utils/languageParser";
+import {
+  getLangFromUrl,
+  stripBasePath,
+  withBasePath,
+} from "@/lib/utils/languageParser";
 
 // font families
 const pf = theme.fonts.font_family.primary;
@@ -43,13 +47,16 @@ const { title, meta_title, description, image, noindex, canonical, lang } =
   Astro.props;
 
 const language = lang || getLangFromUrl(Astro.url);
+const siteBaseUrl = config.site.base_url.replace(/\/$/, "");
+const normalizedPathname = stripBasePath(Astro.url.pathname);
+const normalizedPagePath = normalizedPathname === "/" ? "" : normalizedPathname;
 ---
 
 <!doctype html>
 <html lang={lang}>
   <head>
     <!-- favicon -->
-    <link rel="shortcut icon" href={config.site.favicon} />
+    <link rel="shortcut icon" href={withBasePath(config.site.favicon)} />
     <!-- theme meta -->
     <meta name="theme-name" content="astroplate" />
     <meta name="msapplication-TileColor" content="#000000" />
@@ -138,7 +145,7 @@ const language = lang || getLangFromUrl(Astro.url);
     <meta property="og:type" content="website" />
     <meta
       property="og:url"
-      content={`${config.site.base_url}/${Astro.url.pathname.replace("/", "")}`}
+      content={`${siteBaseUrl}${normalizedPagePath}`}
     />
 
     <!-- twitter-title -->
@@ -160,7 +167,7 @@ const language = lang || getLangFromUrl(Astro.url);
     <!-- og-image -->
     <meta
       property="og:image"
-      content={`${config.site.base_url}${
+      content={`${siteBaseUrl}${
         image ? image : config.metadata.meta_image
       }`}
     />
@@ -168,7 +175,7 @@ const language = lang || getLangFromUrl(Astro.url);
     <!-- twitter-image -->
     <meta
       name="twitter:image"
-      content={`${config.site.base_url}${
+      content={`${siteBaseUrl}${
         image ? image : config.metadata.meta_image
       }`}
     />

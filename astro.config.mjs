@@ -9,6 +9,7 @@ import remarkToc from "remark-toc";
 import config from "./src/config/config.json";
 import languagesJSON from "./src/config/language.json";
 const { default_language } = config.settings;
+const siteUrl = new URL(config.site.base_url);
 
 const supportedLang = [...languagesJSON.map((lang) => lang.languageCode)];
 const disabledLanguages = config.settings.disable_languages;
@@ -20,9 +21,8 @@ const filteredSupportedLang = supportedLang.filter(
 
 // https://astro.build/config
 export default defineConfig({
-  // site: config.site.base_url ? config.site.base_url : "http://examplesite.com",
-  // base: config.site.base_path ? config.site.base_path : "/",
-  site: "https://nmdl-mizo.github.io",
+  site: siteUrl.origin,
+  base: config.site.base_path ? config.site.base_path : "/",
   trailingSlash: config.site.trailing_slash ? "always" : "ignore",
   i18n: {
     locales: filteredSupportedLang,

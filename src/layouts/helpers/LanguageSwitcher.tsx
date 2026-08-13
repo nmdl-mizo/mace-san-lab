@@ -10,6 +10,10 @@ const LanguageSwitcher = ({
   pathname: string;
 }) => {
   const { default_language, default_language_in_subdir } = config.settings;
+  const basePath =
+    config.site.base_path === "/"
+      ? ""
+      : config.site.base_path.replace(/\/$/, "");
 
   // Function to remove trailing slash if necessary
   const removeTrailingSlash = (path: string) => {
@@ -17,6 +21,24 @@ const LanguageSwitcher = ({
       return path.replace(/\/$/, "");
     }
     return path;
+  };
+
+  const stripBasePath = (path: string) => {
+    if (!basePath) return path || "/";
+    const stripped = path.startsWith(basePath)
+      ? path.slice(basePath.length) || "/"
+      : path;
+    return stripped.startsWith("/") ? stripped : `/${stripped}`;
+  };
+
+  const withBasePath = (path: string) => {
+    const normalized = path || "/";
+    if (!basePath) return normalized;
+    if (normalized === basePath || normalized.startsWith(`${basePath}/`)) {
+      return normalized;
+    }
+    if (normalized === "/") return basePath;
+    return `${basePath}${normalized.startsWith("/") ? normalized : `/${normalized}`}`;
   };
 
   // Sort languages by weight and filter out disabled languages
@@ -33,15 +55,16 @@ const LanguageSwitcher = ({
           const selectedLang = e.target.value;
           let newPath;
           const baseUrl = window.location.origin;
+          const pathWithoutBase = stripBasePath(pathname);
 
           if (selectedLang === default_language) {
             if (default_language_in_subdir) {
-              newPath = `${baseUrl}/${default_language}${removeTrailingSlash(pathname.replace(`/${lang}`, ""))}`;
+              newPath = `${baseUrl}${withBasePath(`/${default_language}${removeTrailingSlash(pathWithoutBase.replace(`/${lang}`, ""))}`)}`;
             } else {
-              newPath = `${baseUrl}${removeTrailingSlash(pathname.replace(`/${lang}`, ""))}`;
+              newPath = `${baseUrl}${withBasePath(removeTrailingSlash(pathWithoutBase.replace(`/${lang}`, "")) || "/")}`;
             }
           } else {
-            newPath = `/${selectedLang}${removeTrailingSlash(pathname.replace(`/${lang}`, ""))}`;
+            newPath = `${baseUrl}${withBasePath(`/${selectedLang}${removeTrailingSlash(pathWithoutBase.replace(`/${lang}`, ""))}`)}`;
           }
 
           window.location.href = newPath;

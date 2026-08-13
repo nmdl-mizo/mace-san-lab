@@ -2,6 +2,8 @@ import { getRelativeLocaleUrl } from "astro:i18n";
 import config from "../../config/config.json";
 import languagesJSON from "../../config/language.json";
 const { default_language } = config.settings;
+const rawBasePath = config.site.base_path || "/";
+const basePath = rawBasePath === "/" ? "" : rawBasePath.replace(/\/$/, "");
 
 const locales: { [key: string]: any } = {};
 
@@ -21,8 +23,34 @@ const languages = Object.keys(locales);
 // Export the locales and languages
 export { languages, locales };
 
+export function stripBasePath(pathname: string): string {
+  if (!basePath) {
+    return pathname || "/";
+  }
+
+  const stripped = pathname.startsWith(basePath)
+    ? pathname.slice(basePath.length) || "/"
+    : pathname;
+
+  return stripped.startsWith("/") ? stripped : `/${stripped}`;
+}
+
+export function withBasePath(pathname: string): string {
+  const normalized = pathname || "/";
+  if (!basePath) {
+    return normalized;
+  }
+  if (normalized === basePath || normalized.startsWith(`${basePath}/`)) {
+    return normalized;
+  }
+  if (normalized === "/") {
+    return basePath;
+  }
+  return `${basePath}${normalized.startsWith("/") ? normalized : `/${normalized}`}`;
+}
+
 export function getLangFromUrl(url: URL): string {
-  const [, lang] = url.pathname.split("/");
+  const [, lang] = stripBasePath(url.pathname).split("/");
   if (locales.hasOwnProperty(lang)) {
     return lang;
   }
@@ -106,5 +134,5 @@ export const slugSelector = (url: string, lang: string) => {
     }
   }
 
-  return constructedUrl;
+  return withBasePath(constructedUrl);
 };

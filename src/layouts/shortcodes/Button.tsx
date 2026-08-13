@@ -1,4 +1,5 @@
 import React from "react";
+import { withBasePath } from "@/lib/utils/languageParser";
 
 const Button = ({
   label,
@@ -11,9 +12,10 @@ const Button = ({
   style?: string;
   rel?: string;
 }) => {
+  const href = link.startsWith("/") ? withBasePath(link) : link;
   return (
     <a
-      href={link}
+      href={href}
       target="_blank"
       rel={`noopener noreferrer ${
         rel ? (rel === "follow" ? "" : rel) : "nofollow"
