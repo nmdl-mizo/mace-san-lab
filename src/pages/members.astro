@@ -2,67 +2,40 @@
 import CollectionIndexLayout from '../layouts/CollectionIndexLayout.astro';
 import { groupedMembers } from '../data/members';
 import { withBasePath } from '../lib/paths';
-
-const fullDirectory = [
-  {
-    label: 'Staff',
-    members: [
-      'Professor, PI, Teruyasu Mizoguchi, Ph. D',
-      'Technical Staff, Yutaka Yanaba',
-      'Administrative staff, Yoko Matsuo',
-    ],
-  },
-  {
-    label: 'Researchers',
-    members: [
-      'Takumi Nakano',
-      'Tasuku Sugiura',
-      'Yeongrok Jin, Ph. D',
-    ],
-  },
-  {
-    label: 'Students',
-    members: [
-      'D: Poyen Chen',
-      'D: Izumi Takahara',
-      'D: Yu Fujikata',
-      'D: Louis Wong',
-      'D: Youjeong Choi',
-      'D: Masahiro Watanabe',
-      'D: Ren Okubo',
-      'M: Gen Fukuzawa',
-      'M: Ibuki Okuda',
-      'M: Shuichiro Ozawa',
-      'M: Ryotaro Sahashi',
-      'M: Kazuya Miyamoto',
-      'M: Yinan Wang',
-      'M: Kohei Ueyama',
-      'M: Hitotsuyanagi Akihito',
-      'M: Yutaro Matsuki',
-      'RS: ChihLun Hsu',
-    ],
-  },
-];
 ---
 
 <CollectionIndexLayout
   title="Members"
   eyebrow="Laboratory People"
-  intro="A first pass at making the playground feel like a real laboratory website, not only a design experiment. This page highlights the people who make NMDL work."
+  intro="The current roster is now synced much more closely to the official laboratory page, including the full student cohort rather than only doctoral members."
   description="Members of NMDL in the experimental playground prototype."
 >
   <div class="space-y-14">
+    <section class="flex flex-col gap-4 border border-white/10 bg-white/[0.03] p-6 sm:flex-row sm:items-end sm:justify-between sm:p-7">
+      <p class="max-w-3xl text-[1rem] leading-7 text-white/68">
+        This page now shows the current staff, researchers, students, and research students as distinct groups, based on the official laboratory roster.
+      </p>
+      <a
+        href="https://nmdl-mizo.github.io/en/member"
+        target="_blank"
+        rel="noreferrer"
+        class="inline-flex items-center gap-3 font-display text-[11px] uppercase tracking-[0.24em] text-white/64 transition-colors duration-300 hover:text-accent-blue"
+      >
+        Official member page <span aria-hidden="true">↗</span>
+      </a>
+    </section>
+
     {groupedMembers.map((group) => (
       <section>
         <div class="font-display text-[11px] uppercase tracking-[0.28em] text-accent-blue">{group.label}</div>
         <div class="mt-6 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {group.members.map((member) => (
             <article class="overflow-hidden border border-white/10 bg-white/[0.03]">
-              <img src={withBasePath(member.image)} alt={member.name} class="aspect-[4/3] w-full object-cover" />
+              <img src={withBasePath(member.image)} alt={member.name} class="aspect-[4/3] w-full object-cover object-top" />
               <div class="p-6 sm:p-7">
                 <h2 class="break-words font-display text-[1.9rem] leading-none text-white">{member.name}</h2>
                 <p class="mt-3 text-sm uppercase tracking-[0.18em] text-accent-blue">{member.role}</p>
-                <p class="mt-5 text-[1rem] leading-7 text-white/72">{member.note}</p>
+                {member.note ? <p class="mt-5 text-[1rem] leading-7 text-white/72">{member.note}</p> : null}
                 {member.email ? <p class="mt-5 text-sm text-white/54">{member.email}</p> : null}
               </div>
             </article>
@@ -70,37 +43,5 @@ const fullDirectory = [
         </div>
       </section>
     ))}
-
-    <section class="border-t border-white/10 pt-14">
-      <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-        <div>
-          <div class="font-display text-[11px] uppercase tracking-[0.28em] text-accent-blue">Full Team List</div>
-          <p class="mt-4 max-w-3xl text-[1rem] leading-7 text-white/68">
-            The current homepage cards are curated for presentation. The full team list below follows the official laboratory structure more closely.
-          </p>
-        </div>
-        <a
-          href="https://nmdl-mizo.github.io/en/member"
-          target="_blank"
-          rel="noreferrer"
-          class="inline-flex items-center gap-3 font-display text-[11px] uppercase tracking-[0.24em] text-white/64 transition-colors duration-300 hover:text-accent-blue"
-        >
-          Official member page <span aria-hidden="true">↗</span>
-        </a>
-      </div>
-
-      <div class="mt-8 grid gap-8 lg:grid-cols-3">
-        {fullDirectory.map((group) => (
-          <section class="border border-white/10 bg-white/[0.03] p-6 sm:p-7">
-            <h2 class="font-display text-[1.4rem] uppercase tracking-[0.14em] text-white">{group.label}</h2>
-            <ul class="mt-5 space-y-3 text-[1rem] leading-7 text-white/72">
-              {group.members.map((member) => (
-                <li>{member}</li>
-              ))}
-            </ul>
-          </section>
-        ))}
-      </div>
-    </section>
   </div>
 </CollectionIndexLayout>

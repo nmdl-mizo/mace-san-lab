@@ -1,61 +1,15 @@
 ---
 import CollectionIndexLayout from '../layouts/CollectionIndexLayout.astro';
-
-const researchThemes = [
-  {
-    title: 'Research objective',
-    body: 'Paving the way for Designed Materials through a deep understanding of atomic arrangement, electronic structure, chemical bonding, and structure-property relationships.',
-  },
-  {
-    title: 'AI for Materials',
-    body: 'Generative AI, LLMs, machine learning, Physical AI, robotics, multimodal databases, and AI agents for materials design, analysis, discovery, and autonomous workflows.',
-  },
-  {
-    title: 'High-precision simulation',
-    body: 'First-principles calculations and machine-learning potentials for lattice defects, dopants, surfaces, interfaces, semiconductors, ceramics, layered materials, and two-dimensional compounds.',
-  },
-  {
-    title: 'Energy-related materials',
-    body: 'Structure-function analysis of batteries, ion conductors, photovoltaics, fuel-cell materials, superconductors, and other energy materials.',
-  },
-  {
-    title: 'Spectrum informatics',
-    body: 'ELNES/XANES simulation, theory development, spectrum databases, and machine-learning-based extraction of structure, bonding, and physical insight from spectra.',
-  },
-  {
-    title: 'Atomic-resolution analysis',
-    body: 'STEM-EELS and related advanced microscopy for ultimate analysis of atomic and electronic structure in real materials.',
-  },
-  {
-    title: 'Glasses, liquids, and soft materials',
-    body: 'Atomic-resolution analysis of disordered and dynamic systems including liquids, gases, glasses, and soft materials.',
-  },
-];
+import ResearchContent from '../imported/official/research.md';
 ---
 
 <CollectionIndexLayout
   title="Research"
   eyebrow="Core Direction"
-  intro="Research content should be the center of gravity of this site. This page therefore follows the official research framing much more closely than the earlier theme-first pass."
+  intro="This page now copies the official research content into the playground and presents it inside the new visual system, instead of reducing it to a thin theme summary."
   description="Research directions for the NMDL playground prototype."
 >
-  <div class="grid gap-6 lg:grid-cols-2">
-    {researchThemes.map((theme) => (
-      <section class="border border-white/10 bg-white/[0.03] p-7 sm:p-8">
-        <h2 class="break-words font-display text-[2rem] leading-none text-white">{theme.title}</h2>
-        <p class="mt-5 text-[1rem] leading-7 text-white/72">{theme.body}</p>
-      </section>
-    ))}
-  </div>
-
-  <section class="mt-10 border border-white/10 bg-white/[0.03] p-7 sm:p-8">
-    <a
-      href="https://nmdl-mizo.github.io/en/about"
-      target="_blank"
-      rel="noreferrer"
-      class="inline-flex items-center gap-3 font-display text-[11px] uppercase tracking-[0.24em] text-white/64 transition-colors duration-300 hover:text-accent-blue"
-    >
-      Official research page <span aria-hidden="true">↗</span>
-    </a>
-  </section>
+  <article class="official-prose">
+    <ResearchContent />
+  </article>
 </CollectionIndexLayout>

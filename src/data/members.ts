@@ -1,9 +1,9 @@
 export interface MemberProfile {
   email?: string;
-  group: 'Staff' | 'Researchers' | 'Students';
+  group: 'Staff' | 'Researchers' | 'Students' | 'Research Students';
   image: string;
   name: string;
-  note: string;
+  note?: string;
   role: string;
 }
 
@@ -13,7 +13,7 @@ export const members: MemberProfile[] = [
     role: 'Professor, PI',
     group: 'Staff',
     email: 'teru_at_iis.u-tokyo.ac.jp',
-    image: '/images/members/teruyasu-mizoguchi.png',
+    image: '/images/official/mem/image1.png',
     note: 'Leads NMDL across materials design, atomic-scale characterization, simulation, and AI-enabled research.',
   },
   {
@@ -21,72 +21,154 @@ export const members: MemberProfile[] = [
     role: 'Technical Staff',
     group: 'Staff',
     email: 'yanaba_at_iis.u-tokyo.ac.jp',
-    image: '/images/members/yutaka-yanaba.png',
-    note: 'Supports the laboratory’s technical foundation and day-to-day experimental environment.',
+    image: '/images/official/mem/yanaba.png',
   },
   {
     name: 'Yoko Matsuo',
     role: 'Administrative Staff',
     group: 'Staff',
     email: 'ymatsuo_at_iis.u-tokyo.ac.jp',
-    image: '/images/members/yoko-matsuo.jpeg',
-    note: 'Supports laboratory operations and keeps the group running smoothly behind the scenes.',
+    image: '/images/official/mem/image31.jpeg',
   },
   {
     name: 'Takumi Nakano',
     role: 'Researcher',
     group: 'Researchers',
     email: 'ntakumi_at_iis.u-tokyo.ac.jp',
-    image: '/images/members/takumi-nakano.png',
-    note: 'Works on research themes spanning materials simulation and advanced computational workflows.',
+    image: '/images/official/mem/image5.png',
   },
   {
     name: 'Tasuku Sugiura',
     role: 'Researcher',
     group: 'Researchers',
     email: 'tsugiura_at_iis.u-tokyo.ac.jp',
-    image: '/images/members/tasuku-sugiura.jpeg',
-    note: 'Contributes to theory-driven materials research and computational development inside the lab.',
+    image: '/images/official/mem/image6.jpeg',
   },
   {
     name: 'Yeongrok Jin',
     role: 'Researcher',
     group: 'Researchers',
     email: 'yrjin_at_iis.u-tokyo.ac.jp',
-    image: '/images/members/yeongrok-jin.jpg',
-    note: 'Engages in research at the intersection of atomic-scale analysis and materials functionality.',
+    image: '/images/official/mem/46.jpg',
   },
   {
     name: 'Poyen Chen',
     role: 'Doctoral Student',
     group: 'Students',
     email: 'POYEN_at_iis.u-tokyo.ac.jp',
-    image: '/images/members/poyen-chen.png',
-    note: 'Pursues doctoral research in the NMDL environment with a strong focus on advanced materials science.',
+    image: '/images/official/mem/image9.png',
   },
   {
     name: 'Izumi Takahara',
     role: 'Doctoral Student',
     group: 'Students',
     email: 'KOUGEN_at_iis.u-tokyo.ac.jp',
-    image: '/images/members/izumi-takahara.png',
-    note: 'Works on materials research themes shaped by theory, data, and a modern computational perspective.',
+    image: '/images/official/mem/image10.png',
   },
   {
     name: 'Yu Fujikata',
     role: 'Doctoral Student',
     group: 'Students',
     email: 'fujikata_at_iis.u-tokyo.ac.jp',
-    image: '/images/members/yu-fujikata.jpg',
-    note: 'Develops research as part of the doctoral student cohort in the lab’s evolving materials program.',
+    image: '/images/official/mem/fujikata.jpg',
   },
   {
     name: 'Louis Wong',
     role: 'Doctoral Student',
     group: 'Students',
     email: 'lwong_at_iis.u-tokyo.ac.jp',
-    image: '/images/members/louis-wong.jpg',
-    note: 'Explores doctoral-level materials research with an eye toward ambitious and future-facing themes.',
+    image: '/images/official/mem/lowis.jpg',
+  },
+  {
+    name: 'Youjeong Choi',
+    role: 'Doctoral Student',
+    group: 'Students',
+    email: 'youjeong_at_iis.u-tokyo.ac.jp',
+    image: '/images/official/mem/youjeong.jpg',
+  },
+  {
+    name: 'Masahiro Watanabe',
+    role: 'Doctoral Student',
+    group: 'Students',
+    email: 'mw008_at_iis.u-tokyo.ac.jp',
+    image: '/images/official/mem/watanabe.png',
+  },
+  {
+    name: 'Ren Okubo',
+    role: 'Doctoral Student',
+    group: 'Students',
+    email: 'ROKUBO_at_iis.u-tokyo.ac.jp',
+    image: '/images/official/mem/okubo2024.jpg',
+  },
+  {
+    name: 'Gen Fukuzawa',
+    role: 'Master Student',
+    group: 'Students',
+    email: 'genf_at_iis.u-tokyo.ac.jp',
+    image: '/images/official/mem/image12.png',
+  },
+  {
+    name: 'Ibuki Okuda',
+    role: 'Master Student',
+    group: 'Students',
+    email: 'okuda_at_iis.u-tokyo.ac.jp',
+    image: '/images/official/mem/okuda.jpg',
+  },
+  {
+    name: 'Shuichiro Ozawa',
+    role: 'Master Student',
+    group: 'Students',
+    email: 's-ozawa_at_iis.u-tokyo.ac.jp',
+    image: '/images/official/mem/ozawa.jpg',
+  },
+  {
+    name: 'Ryotaro Sahashi',
+    role: 'Master Student',
+    group: 'Students',
+    email: 'sahashi_at_iis.u-tokyo.ac.jp',
+    image: '/images/official/mem/sahashi.jpg',
+  },
+  {
+    name: 'Kazuya Miyamoto',
+    role: 'Master Student',
+    group: 'Students',
+    email: 'miya1216_at_iis.u-tokyo.ac.jp',
+    image: '/images/official/mem/miyamoto.jpg',
+  },
+  {
+    name: 'Yinan Wang',
+    role: 'Master Student',
+    group: 'Students',
+    email: 'ynwang_at_iis.u-tokyo.ac.jp',
+    image: '/images/official/mem/wang.jpg',
+  },
+  {
+    name: 'Kohei Ueyama',
+    role: 'Master Student',
+    group: 'Students',
+    email: 'koh1208_at__iis.u-tokyo.ac.jp',
+    image: '/images/official/mem/ueyama.jpg',
+  },
+  {
+    name: 'Akihito Hitotsuyanagi',
+    role: 'Master Student',
+    group: 'Students',
+    email: 'akihito_at__iis.u-tokyo.ac.jp',
+    image: '/images/official/mem/hitotsu.jpg',
+  },
+  {
+    name: 'Yutaro Matsuki',
+    role: 'Master Student',
+    group: 'Students',
+    email: 'ymatsuki_at__iis.u-tokyo.ac.jp',
+    image: '/images/official/mem/matsuki.jpg',
+  },
+  {
+    name: 'ChihLun Hsu',
+    role: 'Research Student',
+    group: 'Research Students',
+    email: 'chihlun_at_iis.u-tokyo.ac.jp',
+    image: '/images/official/mem/hsu.jpg',
   },
 ];
 
@@ -96,4 +178,5 @@ export const groupedMembers = [
   { label: 'Staff', members: members.filter((member) => member.group === 'Staff') },
   { label: 'Researchers', members: members.filter((member) => member.group === 'Researchers') },
   { label: 'Students', members: members.filter((member) => member.group === 'Students') },
+  { label: 'Research Students', members: members.filter((member) => member.group === 'Research Students') },
 ];

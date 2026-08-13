@@ -1,55 +1,66 @@
 ---
 import CollectionIndexLayout from '../layouts/CollectionIndexLayout.astro';
+import AwardsContent from '../imported/official/awards.md';
+import BooksContent from '../imported/official/books.md';
+import InvitedContent from '../imported/official/invited.md';
+import ManuscriptsContent from '../imported/official/manuscripts.md';
+import PresentationsContent from '../imported/official/presentations.md';
 
-const recentPapers = [
-  'Y. Wang and T. Mizoguchi, All-Electron Single-Atom Reference Correction for Absolute Transition Energies in Fixed-Reference PAW-XCH Calculations (submitted, arXiv 2608.09216)',
-  'I. Takahara and T. Mizoguchi, Toward Auditable AI Scientists: A Hypothesis Evolution Protocol for LLM Agents (submitted, arXiv 2607.09195)',
-  'R. Sahashi, P. Y. Chen, and T. Mizoguchi, Transient Detour and Cooperative Oxygen Exchange in the Polarization Switching of Ferroelectric Hf0.5Zr0.5O2 (submitted, arXiv 2607.26597)',
-  'P. Y. Chen and T. Mizoguchi, Transition from Homogeneous to Domain-Wall-Mediated Polarization Switching in BaTiO3: A Machine-Learning Molecular Dynamics Study (submitted, arXiv 2605.25485)',
-  'I. Okuda, I. Takahara, and T. Mizoguchi, Inverse Materials Design via Joint Generation of Crystal Structures and Local Electronic Descriptors (submitted, arXiv 2605.01286)',
-  'R. Okubo, Y. Fujikata, I. Takahara, and T. Mizoguchi, Generative Inverse Estimation of 3D Atomic Coordination from Near-Edge Spectra via Equivariant Diffusion Models (submitted, arXiv 2602.16133)',
-  'T. Sugiura and T. Mizoguchi, Achieving Robust Extrapolation in Materials Property Prediction via Decoupled Transfer Learning (submitted, arXiv 2602.18054)',
-  'Electric Field-Induced Phase Transitions and Hysteresis in Ferroelectric HfO2 Captured with Machine Learning Potential, Materials Today Electronics 17 (2026)',
-  'Long-range interaction effects on the phase transition, mechanical effect, and electric field response of BaTiO3 by machine learning potentials, APL Machine Learning 4 (2026)',
-  'Accelerated inorganic materials design with generative AI agents, Cell Reports Physical Science 17 (2025)',
-];
-
-const archiveLinks = [
-  { label: 'Manuscripts', href: 'https://nmdl-mizo.github.io/en/manuscript' },
-  { label: 'Invited / Keynote', href: 'https://nmdl-mizo.github.io/en/invited' },
-  { label: 'Presentations', href: 'https://nmdl-mizo.github.io/en/presentation' },
-  { label: 'Books / Proceedings', href: 'https://nmdl-mizo.github.io/en/book' },
-  { label: 'Awards', href: 'https://nmdl-mizo.github.io/en/award' },
+const sections = [
+  { id: 'manuscripts', label: 'Manuscripts' },
+  { id: 'invited', label: 'Invited' },
+  { id: 'presentations', label: 'Presentations' },
+  { id: 'books', label: 'Books / Annals' },
+  { id: 'awards', label: 'Awards' },
 ];
 ---
 
 <CollectionIndexLayout
   title="Publications and Achievements"
   eyebrow="Research Output"
-  intro="The official laboratory site already has a deep achievements structure. Instead of flattening that into a few highlight cards, this playground is being corrected to expose the real archive structure."
+  intro="This page now restores the official achievements archive structure, with the actual content copied into the playground instead of a small set of highlight cards."
   description="Publications and achievements for the NMDL playground prototype."
 >
   <div class="space-y-10">
-    <section class="grid gap-4 md:grid-cols-2 xl:grid-cols-5">
-      {archiveLinks.map((link) => (
-        <a
-          href={link.href}
-          target="_blank"
-          rel="noreferrer"
-          class="border border-white/10 bg-white/[0.03] px-5 py-5 text-center font-display text-[11px] uppercase tracking-[0.24em] text-white/72 transition-colors duration-300 hover:border-accent-blue/40 hover:text-accent-blue"
-        >
-          {link.label}
-        </a>
+    <nav class="official-anchor-grid" aria-label="Publications sections">
+      {sections.map((section) => (
+        <a href={`#${section.id}`}>{section.label}</a>
       ))}
+    </nav>
+
+    <section id="manuscripts" class="space-y-4">
+      <h2 class="font-display text-[1.9rem] uppercase tracking-[0.14em] text-white">Manuscripts</h2>
+      <article class="official-prose official-prose-compact">
+        <ManuscriptsContent />
+      </article>
     </section>
 
-    <section class="border border-white/10 bg-white/[0.03] p-7 sm:p-8">
-      <div class="font-display text-[11px] uppercase tracking-[0.28em] text-accent-blue">Recent manuscripts and preprints</div>
-      <ol class="mt-6 space-y-4 text-[1rem] leading-7 text-white/72">
-        {recentPapers.map((paper) => (
-          <li>{paper}</li>
-        ))}
-      </ol>
+    <section id="invited" class="space-y-4">
+      <h2 class="font-display text-[1.9rem] uppercase tracking-[0.14em] text-white">Invited / Keynote / Plenary</h2>
+      <article class="official-prose official-prose-compact">
+        <InvitedContent />
+      </article>
+    </section>
+
+    <section id="presentations" class="space-y-4">
+      <h2 class="font-display text-[1.9rem] uppercase tracking-[0.14em] text-white">International and Domestic Presentations</h2>
+      <article class="official-prose official-prose-compact">
+        <PresentationsContent />
+      </article>
+    </section>
+
+    <section id="books" class="space-y-4">
+      <h2 class="font-display text-[1.9rem] uppercase tracking-[0.14em] text-white">Books and Annals</h2>
+      <article class="official-prose official-prose-compact">
+        <BooksContent />
+      </article>
+    </section>
+
+    <section id="awards" class="space-y-4">
+      <h2 class="font-display text-[1.9rem] uppercase tracking-[0.14em] text-white">Awards</h2>
+      <article class="official-prose official-prose-compact">
+        <AwardsContent />
+      </article>
     </section>
   </div>
 </CollectionIndexLayout>
