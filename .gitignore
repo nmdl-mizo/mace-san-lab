@@ -1,7 +1,11 @@
 # build output
 dist/
-.output/
-.json/
+.vercel/
+.wrangler/
+launch-video/
+output/
+# generated types
+.astro/
 
 # dependencies
 node_modules/
@@ -11,8 +15,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
-# yarn.lock
-# package-lock.json
 
 
 # environment variables
@@ -22,5 +24,8 @@ pnpm-debug.log*
 # macOS-specific files
 .DS_Store
 
-# ignore .astro directory
-.astro
+# jetbrains setting folder
+.idea/
+
+# editor settings
+.vscode/

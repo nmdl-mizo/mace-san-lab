@@ -1,1 +1,0 @@
-#### nmdl-mizo.github.io

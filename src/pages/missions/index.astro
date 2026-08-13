@@ -1,0 +1,55 @@
+---
+import { Rocket, Satellite, Star } from 'lucide-react';
+
+import CollectionIndexLayout from '../../layouts/CollectionIndexLayout.astro';
+import { getMissionEntries } from '../../lib/content';
+import { withBasePath } from '../../lib/paths';
+
+const missions = await getMissionEntries();
+const iconMap = {
+  satellite: Satellite,
+  rocket: Rocket,
+  star: Star,
+};
+---
+
+<CollectionIndexLayout
+  title="Research Areas"
+  eyebrow="Collection Archive"
+  intro="Browse the current research directions of the Nano Materials Design Laboratory in this experimental cinematic format."
+  description="Research directions of the Nano Materials Design Laboratory in the NMDL playground prototype."
+>
+  <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+    {missions.map((mission) => {
+      const Icon = iconMap[mission.data.icon];
+      return (
+        <a
+          href={withBasePath(`/missions/${mission.id}/`)}
+          class="group flex h-full flex-col border border-white/10 bg-deep-space-card p-7 transition-colors duration-300 hover:border-accent-blue/50"
+        >
+          <div class="flex items-start justify-between gap-6">
+            <Icon className="mt-1 text-white/18" size={28} strokeWidth={1.4} />
+            <span class={`rounded-full px-3 py-1 font-display text-[10px] uppercase tracking-[0.22em] ${mission.data.statusTone === 'green' ? 'bg-emerald-400/10 text-emerald-300' : mission.data.statusTone === 'blue' ? 'bg-accent-blue/14 text-accent-blue' : 'bg-warm-gold/12 text-warm-gold'}`}>
+              {mission.data.status}
+            </span>
+          </div>
+          <h2 class="mt-12 break-words font-display text-[2rem] leading-none text-white">{mission.data.title}</h2>
+          <p class="mt-5 text-[1.02rem] leading-8 text-white/68">{mission.data.summary}</p>
+          <dl class="mt-8 grid gap-4 text-sm text-white/54">
+            <div>
+              <dt class="font-display text-[10px] uppercase tracking-[0.22em] text-accent-blue">Focus</dt>
+              <dd class="mt-2 leading-6">{mission.data.destination}</dd>
+            </div>
+            <div>
+              <dt class="font-display text-[10px] uppercase tracking-[0.22em] text-accent-blue">Method</dt>
+              <dd class="mt-2 leading-6">{mission.data.vehicle}</dd>
+            </div>
+          </dl>
+          <span class="mt-10 inline-flex items-center gap-3 font-display text-[11px] uppercase tracking-[0.24em] text-white/55 transition-colors duration-300 group-hover:text-accent-blue">
+            Open topic <span aria-hidden="true">→</span>
+          </span>
+        </a>
+      );
+    })}
+  </div>
+</CollectionIndexLayout>

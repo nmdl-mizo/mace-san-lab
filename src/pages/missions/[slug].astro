@@ -1,0 +1,35 @@
+---
+import { render } from 'astro:content';
+
+import EntryLayout from '../../layouts/EntryLayout.astro';
+import { getMissionEntries } from '../../lib/content';
+import { withBasePath } from '../../lib/paths';
+
+export async function getStaticPaths() {
+  const missions = await getMissionEntries();
+  return missions.map((entry) => ({
+    params: { slug: entry.id },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+
+<EntryLayout
+  title={entry.data.title}
+  eyebrow="Research Area"
+  summary={entry.data.summary}
+  image={entry.data.coverImage}
+  backHref={withBasePath('/missions/')}
+  backLabel="All research areas"
+  details={[
+    { label: 'Status', value: entry.data.status },
+    { label: 'Focus', value: entry.data.destination },
+    { label: 'Method', value: entry.data.vehicle },
+    { label: 'Scope', value: entry.data.missionWindow },
+  ]}
+>
+  <Content />
+</EntryLayout>
