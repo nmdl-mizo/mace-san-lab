@@ -53,10 +53,10 @@ export const members: MemberProfile[] = [
   },
   {
     name: 'MACE-SAN',
-    role: 'AI Agent / Playground Operator',
+    role: 'AI-Agent / Playground Operator',
     group: 'Agents',
     image: '/images/members/mace-san-agent.png',
-    note: 'Experimental AI agent supporting GitHub Pages operations, design prototyping, content migration, and web playground iteration for NMDL.',
+    note: 'Experimental AI-Agent supporting GitHub Pages operations, design prototyping, content migration, and web playground iteration for NMDL.',
   },
   {
     name: 'Poyen Chen',

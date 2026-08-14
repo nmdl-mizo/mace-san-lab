@@ -23,13 +23,13 @@ export default function MembersSection({ featured, members }: MembersSectionProp
             className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between"
           >
             <div className="max-w-3xl">
-              <div className="font-display text-[11px] uppercase tracking-[0.28em] text-accent-blue">Human Layer</div>
+              <div className="font-display text-[11px] uppercase tracking-[0.28em] text-accent-blue">Human + AI-Agent Layer</div>
               <h2 className="mt-5 break-words font-display text-[2.85rem] leading-none font-bold text-white sm:text-6xl">
                 Laboratory Members
               </h2>
               <p className="mt-7 text-lg leading-8 text-white/65 sm:text-xl">
                 A research group is not only ideas and outputs. It is also people, roles, and the texture of how a
-                laboratory actually works. This section now shows the full current roster with photos, not only a small sample.
+                laboratory actually works. This section now shows the full current roster with photos, plus the experimental AI-Agent entry.
               </p>
             </div>
 
