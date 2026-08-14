@@ -93,7 +93,7 @@ export const mobileNav: NavLink[] = [...heroLeftNav, ...heroRightNav];
 export const heroContent: HeroContent = {
   eyebrow: 'NMDL PLAYGROUND',
   paragraph:
-    'Nano Materials Design Laboratory explores how atomic structure, bonding, simulation, measurement, and AI can work together to create designed materials. This is an experimental cinematic prototype for reimagining the Mizoguchi Lab website.',
+    'Nano Materials Design Laboratory explores how atomic structure, bonding, spectroscopy, simulation, measurement, and AI can be fused into a single high-energy pipeline for designed materials. This playground is the experimental high-voltage version of that story.',
   primaryCta: {
     href: withBasePath('/research/'),
     label: 'Explore Research',
@@ -106,10 +106,10 @@ export const heroContent: HeroContent = {
 };
 
 export const stats: StatBlockProps[] = [
-  { value: 'AI', label: 'Materials Design' },
-  { value: 'DFT', label: 'Simulation Layer' },
-  { value: 'STEM', label: 'Characterization' },
-  { value: 'PX', label: 'Playground Mode' },
+  { value: '302+', label: 'Manuscripts in archive' },
+  { value: '23', label: 'Current members' },
+  { value: '6', label: 'Research directions' },
+  { value: '2025', label: 'Renewed lab space' },
 ];
 
 export const footerMeta: FooterMeta = {

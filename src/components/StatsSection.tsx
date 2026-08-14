@@ -79,10 +79,14 @@ function StatBlock({ index, label, value }: StatBlockProps & { index: number }) 
       initial={{ opacity: 0, y: 40 }}
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 40 }}
       transition={{ duration: 0.78, delay: index * 0.12, ease: aeonEase }}
-      className={index > 0 ? 'lg:border-l lg:border-white/5 lg:pl-10' : ''}
+      className="relative overflow-hidden border border-white/10 bg-white/[0.03] p-6 sm:p-7"
     >
-      <div className="font-display text-[3.2rem] leading-none font-bold text-white sm:text-6xl">{displayValue}</div>
-      <div className="mt-5 font-display text-[11px] uppercase tracking-[0.26em] text-accent-blue">{label}</div>
+      <div className="absolute -right-10 top-[-2.5rem] h-24 w-24 rounded-full bg-accent-blue/10 blur-3xl" />
+      <div className="absolute inset-x-0 top-0 h-px bg-[linear-gradient(to_right,transparent,rgba(74,158,255,0.85),transparent)]" />
+      <div className="relative">
+        <div className="font-display text-[3.2rem] leading-none font-bold text-white sm:text-6xl">{displayValue}</div>
+        <div className="mt-5 font-display text-[11px] uppercase tracking-[0.26em] text-accent-blue">{label}</div>
+      </div>
     </motion.div>
   );
 }
@@ -90,9 +94,17 @@ function StatBlock({ index, label, value }: StatBlockProps & { index: number }) 
 export default function StatsSection({ stats }: StatsSectionProps) {
   return (
     <MotionConfig reducedMotion="user">
-      <section id="science" className="bg-page-bg py-18 sm:py-22">
+      <section id="science" className="relative overflow-hidden bg-page-bg py-18 sm:py-22">
+        <div className="absolute inset-x-0 top-0 h-px bg-[linear-gradient(to_right,transparent,rgba(74,158,255,0.5),transparent)]" />
+        <div className="absolute left-[12%] top-10 h-40 w-40 rounded-full bg-accent-blue/8 blur-3xl" />
         <div className="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12">
-          <div className="grid gap-y-12 gap-x-8 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mb-10 max-w-3xl">
+            <div className="font-display text-[11px] uppercase tracking-[0.28em] text-accent-blue">Impact Snapshot</div>
+            <h2 className="mt-4 font-display text-[2.2rem] leading-[0.95] text-white sm:text-[3rem]">
+              More signal．more glow．more scale．
+            </h2>
+          </div>
+          <div className="grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
             {stats.map((stat, index) => (
               <StatBlock key={stat.label} index={index} {...stat} />
             ))}

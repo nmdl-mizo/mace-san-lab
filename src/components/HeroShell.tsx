@@ -52,6 +52,22 @@ export default function HeroShell({
 }: HeroShellProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const homeHref = withBasePath('/');
+  const heroMetrics = [
+    { value: '302+', label: 'Manuscripts archived' },
+    { value: '23', label: 'Current members' },
+    { value: '6', label: 'Research directions' },
+    { value: '2025', label: 'Lab renewal' },
+  ];
+  const signalWords = [
+    'AI AGENTS',
+    'PHYSICAL AI',
+    'STEM-EELS',
+    'XANES',
+    'DFT',
+    'ML POTENTIALS',
+    'DESIGNED MATERIALS',
+    'ATOMIC-SCALE ANALYSIS',
+  ];
   const orbitalRings = [
     {
       size: 'min(55vw, 500px)',
@@ -76,12 +92,19 @@ export default function HeroShell({
             clipPath: 'polygon(0 0, 100% 0, 100% 10%, 50% 26%, 0 10%)',
           }}
         >
+          <div className="hero-grid absolute inset-0" />
           <img
             src={withBasePath('/images/top_hero_image.png')}
             alt=""
             className="hero-sky-image absolute inset-0 h-full w-full object-cover object-top"
           />
+          <div className="hero-aurora hero-aurora-left absolute -left-[12%] top-[-8%] h-[24rem] w-[24rem] rounded-full blur-3xl" />
+          <div className="hero-aurora hero-aurora-right absolute right-[-10%] top-[4%] h-[22rem] w-[22rem] rounded-full blur-3xl" />
+          <div className="hero-beam absolute left-1/2 top-[-5%] h-[42rem] w-[16rem] -translate-x-1/2 rotate-[18deg]" />
+          <div className="hero-beam absolute left-[18%] top-[6%] h-[26rem] w-[8rem] rotate-[28deg] opacity-60" />
+          <div className="hero-beam absolute right-[16%] top-[2%] h-[24rem] w-[7rem] -rotate-[24deg] opacity-55" />
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_-10%,rgba(74,158,255,0.25),transparent_45%),radial-gradient(circle_at_50%_10%,rgba(255,255,255,0.08),transparent_42%)]" />
+          <div className="hero-scanline absolute inset-x-0 top-[22%] h-px" />
 
           {heroStars.map((star, index) => (
             <span
@@ -221,8 +244,10 @@ export default function HeroShell({
               initial={{ opacity: 0, scale: 0.7 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.4, duration: 0.85, ease: aeonEase }}
-              className="relative flex h-[84px] w-[84px] items-center justify-center overflow-hidden rounded-full border border-white/55 bg-[radial-gradient(circle_at_30%_30%,#fffdf7,#f2e8d7_70%,#e8dcc8)] shadow-[0_18px_54px_rgba(0,0,0,0.28)] sm:h-[110px] sm:w-[110px] lg:h-[136px] lg:w-[136px]"
+              className="relative flex h-[84px] w-[84px] items-center justify-center overflow-hidden rounded-full border border-white/55 bg-[radial-gradient(circle_at_30%_30%,#fffdf7,#f2e8d7_70%,#e8dcc8)] shadow-[0_18px_54px_rgba(0,0,0,0.28),0_0_90px_rgba(74,158,255,0.22)] sm:h-[110px] sm:w-[110px] lg:h-[136px] lg:w-[136px]"
             >
+              <div className="absolute inset-[10%] rounded-full border border-white/35 opacity-70" />
+              <div className="absolute inset-[-18%] rounded-full border border-accent-blue/20" />
               <BrandLogo kind="symbol" className="w-[64%] sm:w-[66%]" tone="light" />
             </motion.div>
           </div>
@@ -235,8 +260,8 @@ export default function HeroShell({
               className="max-w-[11ch] font-display text-[1.65rem] leading-[0.92] font-bold uppercase tracking-[0.03em] text-navy-text sm:max-w-none sm:text-[2.5rem] md:text-[3.35rem] lg:text-[5.5rem]"
             >
               <span className="block">{content.eyebrow}</span>
-              <span className="mt-3 block bg-[linear-gradient(to_right,#1a5fa0,#8b6532)] bg-clip-text text-transparent">
-                A DESIGN SPACE
+              <span className="mt-3 block bg-[linear-gradient(to_right,#1a5fa0,#4a9eff,#8b6532)] bg-clip-text text-transparent [text-shadow:0_0_24px_rgba(74,158,255,0.18)]">
+                DESIGNED MATERIALS
               </span>
             </motion.h2>
 
@@ -267,6 +292,39 @@ export default function HeroShell({
               >
                 {content.secondaryCta.label}
               </a>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.95, duration: 0.85, ease: aeonEase }}
+              className="mt-8 grid w-full max-w-5xl gap-3 sm:mt-10 sm:grid-cols-2 xl:grid-cols-4"
+            >
+              {heroMetrics.map((metric) => (
+                <div key={metric.label} className="hero-metric-card px-5 py-4 text-left backdrop-blur-md">
+                  <div className="font-display text-[1.6rem] leading-none font-bold text-navy-text sm:text-[1.9rem]">
+                    {metric.value}
+                  </div>
+                  <div className="mt-3 font-display text-[10px] uppercase tracking-[0.22em] text-muted-navy/80">
+                    {metric.label}
+                  </div>
+                </div>
+              ))}
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 1.02, duration: 0.85, ease: aeonEase }}
+              className="hero-ticker mt-5 w-[min(92vw,1100px)] overflow-hidden rounded-full border border-navy-text/10 bg-page-cream/68 py-3 backdrop-blur-md"
+            >
+              <div className="ticker-track">
+                {[...signalWords, ...signalWords].map((word, index) => (
+                  <span key={`${word}-${index}`} className="ticker-chip">
+                    {word}
+                  </span>
+                ))}
+              </div>
             </motion.div>
 
             <motion.div
