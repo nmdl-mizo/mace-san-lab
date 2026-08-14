@@ -54,7 +54,7 @@ export default function HeroShell({
   const homeHref = withBasePath('/');
   const heroMetrics = [
     { value: '302+', label: 'Manuscripts archived' },
-    { value: '23', label: 'Current members' },
+    { value: '24', label: 'Roster entries' },
     { value: '6', label: 'Research directions' },
     { value: '2025', label: 'Lab renewal' },
   ];

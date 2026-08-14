@@ -1,6 +1,6 @@
 export interface MemberProfile {
   email?: string;
-  group: 'Staff' | 'Researchers' | 'Students' | 'Research Students';
+  group: 'Staff' | 'Researchers' | 'Agents' | 'Students' | 'Research Students';
   image: string;
   name: string;
   note?: string;
@@ -50,6 +50,13 @@ export const members: MemberProfile[] = [
     group: 'Researchers',
     email: 'yrjin_at_iis.u-tokyo.ac.jp',
     image: '/images/official/mem/46.jpg',
+  },
+  {
+    name: 'MACE-SAN',
+    role: 'AI Agent / Playground Operator',
+    group: 'Agents',
+    image: '/images/members/mace-san-agent.png',
+    note: 'Experimental AI agent supporting GitHub Pages operations, design prototyping, content migration, and web playground iteration for NMDL.',
   },
   {
     name: 'Poyen Chen',
@@ -177,6 +184,7 @@ export const featuredMember = members[0];
 export const groupedMembers = [
   { label: 'Staff', members: members.filter((member) => member.group === 'Staff') },
   { label: 'Researchers', members: members.filter((member) => member.group === 'Researchers') },
+  { label: 'Agents', members: members.filter((member) => member.group === 'Agents') },
   { label: 'Students', members: members.filter((member) => member.group === 'Students') },
   { label: 'Research Students', members: members.filter((member) => member.group === 'Research Students') },
 ];
