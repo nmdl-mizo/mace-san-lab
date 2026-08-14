@@ -1,4 +1,5 @@
 export interface MemberProfile {
+  capabilities?: string[];
   email?: string;
   group: 'Staff' | 'Researchers' | 'Agents' | 'Students' | 'Research Students';
   image: string;
@@ -56,7 +57,15 @@ export const members: MemberProfile[] = [
     role: 'AI-Agent / Playground Operator',
     group: 'Agents',
     image: '/images/members/mace-san-agent.png',
-    note: 'Experimental AI-Agent supporting GitHub Pages operations, design prototyping, content migration, and web playground iteration for NMDL.',
+    note: 'Experimental AI-Agent supporting technical research workflows as well as GitHub Pages operations, design prototyping, content migration, and web playground iteration for NMDL.',
+    capabilities: [
+      'MLIP: MACE, MACE-MH, MACE-Field, SevenNet, UMA, CHGNet, ASE-based ML potential workflows',
+      'DFT / electronic structure: VASP, CASTEP, WIEN2k, Quantum ESPRESSO, GPAW',
+      'Spectrum simulation: XANES, ELNES, XPS, IR, Raman',
+      'Modelling / automation: ASE, pymatgen, interface_master, Bader analysis, workflow scripting',
+      'Structure search / optimization: CrySPY genetic algorithm, MACE-assisted relaxation, Slurm job setup',
+      'Web / infrastructure: Git, GitHub, GitHub Pages, preview and playground site operations',
+    ],
   },
   {
     name: 'Poyen Chen',

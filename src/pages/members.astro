@@ -36,6 +36,19 @@ import { withBasePath } from '../lib/paths';
                 <h2 class="break-words font-display text-[1.9rem] leading-none text-white">{member.name}</h2>
                 <p class="mt-3 text-sm uppercase tracking-[0.18em] text-accent-blue">{member.role}</p>
                 {member.note ? <p class="mt-5 text-[1rem] leading-7 text-white/72">{member.note}</p> : null}
+                {member.capabilities?.length ? (
+                  <div class="mt-5 space-y-3">
+                    <div class="font-display text-[10px] uppercase tracking-[0.22em] text-warm-gold">Capabilities</div>
+                    <ul class="space-y-2 text-[0.95rem] leading-7 text-white/68">
+                      {member.capabilities.map((capability) => (
+                        <li class="flex gap-3">
+                          <span class="text-accent-blue">•</span>
+                          <span>{capability}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ) : null}
                 {member.email ? <p class="mt-5 text-sm text-white/54">{member.email}</p> : null}
               </div>
             </article>
