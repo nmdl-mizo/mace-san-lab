@@ -91,18 +91,18 @@ export const heroRightNav: NavLink[] = [
 export const mobileNav: NavLink[] = [...heroLeftNav, ...heroRightNav];
 
 export const heroContent: HeroContent = {
-  eyebrow: 'NMDL PLAYGROUND',
+  eyebrow: 'MATERIALS INTELLIGENCE',
   paragraph:
-    'Nano Materials Design Laboratory explores how atomic structure, bonding, spectroscopy, simulation, measurement, and AI can be fused into a single high-energy pipeline for designed materials. This playground is the experimental high-voltage version of that story.',
+    'mace-san is an experimental research companion for the Nano Materials Design Laboratory: connecting atomistic structure, chemical bonding, spectroscopy, simulations, measurements, machine-learning potentials, and the human decisions that turn data into designed materials.',
   primaryCta: {
     href: withBasePath('/research/'),
-    label: 'Explore Research',
+    label: 'ENTER RESEARCH MATRIX',
   },
   secondaryCta: {
     href: withBasePath('/publications/'),
-    label: 'See Publications',
+    label: 'OPEN KNOWLEDGE ARCHIVE',
   },
-  utilityLabel: 'EXPERIMENTAL / UNOFFICIAL',
+  utilityLabel: 'EXPERIMENTAL / UNOFFICIAL / ACTIVE',
 };
 
 export const stats: StatBlockProps[] = [
@@ -113,11 +113,11 @@ export const stats: StatBlockProps[] = [
 ];
 
 export const footerMeta: FooterMeta = {
-  title: 'NMDL',
+  title: 'mace-san',
   description:
-    'Nano Materials Design Laboratory, The University of Tokyo. Experimental design prototype for a more cinematic and research-forward web presence.',
+    'mace-san is the experimental Materials Intelligence interface for the Nano Materials Design Laboratory, The University of Tokyo.',
 };
 
 export const footerDirectory: NavLink[] = [...siteNav];
 
-export const footerPolicies: string[] = ['Preview', 'Experimental', 'Unofficial'];
+export const footerPolicies: string[] = ['mace-san', 'Experimental', 'Materials Intelligence'];
