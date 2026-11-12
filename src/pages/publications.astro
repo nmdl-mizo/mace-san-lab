@@ -1,10 +1,6 @@
 ---
 import CollectionIndexLayout from '../layouts/CollectionIndexLayout.astro';
-import AwardsContent from '../imported/official/awards.md';
-import BooksContent from '../imported/official/books.md';
-import InvitedContent from '../imported/official/invited.md';
-import ManuscriptsContent from '../imported/official/manuscripts.md';
-import PresentationsContent from '../imported/official/presentations.md';
+import OfficialDocument from '../components/OfficialDocument.astro';
 
 const sections = [
   { id: 'manuscripts', label: 'Manuscripts' },
@@ -18,8 +14,8 @@ const sections = [
 <CollectionIndexLayout
   title="Publications and Achievements"
   eyebrow="Research Output"
-  intro="This page now restores the official achievements archive structure, with the actual content copied into the playground instead of a small set of highlight cards."
-  description="Publications and achievements for the NMDL playground prototype."
+  intro="Publications, presentations, books, and awards recorded on the official NMDL website."
+  description="NMDL publications and achievements from the official website."
 >
   <div class="space-y-10">
     <nav class="official-anchor-grid" aria-label="Publications sections">
@@ -30,37 +26,27 @@ const sections = [
 
     <section id="manuscripts" class="space-y-4">
       <h2 class="font-display text-[1.9rem] uppercase tracking-[0.14em] text-white">Manuscripts</h2>
-      <article class="official-prose official-prose-compact">
-        <ManuscriptsContent />
-      </article>
+      <OfficialDocument name="manuscripts" />
     </section>
 
     <section id="invited" class="space-y-4">
       <h2 class="font-display text-[1.9rem] uppercase tracking-[0.14em] text-white">Invited / Keynote / Plenary</h2>
-      <article class="official-prose official-prose-compact">
-        <InvitedContent />
-      </article>
+      <OfficialDocument name="invited" />
     </section>
 
     <section id="presentations" class="space-y-4">
       <h2 class="font-display text-[1.9rem] uppercase tracking-[0.14em] text-white">International and Domestic Presentations</h2>
-      <article class="official-prose official-prose-compact">
-        <PresentationsContent />
-      </article>
+      <OfficialDocument name="presentations" />
     </section>
 
     <section id="books" class="space-y-4">
       <h2 class="font-display text-[1.9rem] uppercase tracking-[0.14em] text-white">Books and Annals</h2>
-      <article class="official-prose official-prose-compact">
-        <BooksContent />
-      </article>
+      <OfficialDocument name="books" />
     </section>
 
     <section id="awards" class="space-y-4">
       <h2 class="font-display text-[1.9rem] uppercase tracking-[0.14em] text-white">Awards</h2>
-      <article class="official-prose official-prose-compact">
-        <AwardsContent />
-      </article>
+      <OfficialDocument name="awards" />
     </section>
   </div>
 </CollectionIndexLayout>

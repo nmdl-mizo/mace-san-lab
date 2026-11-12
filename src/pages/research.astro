@@ -1,15 +1,13 @@
 ---
 import CollectionIndexLayout from '../layouts/CollectionIndexLayout.astro';
-import ResearchContent from '../imported/official/research.md';
+import OfficialDocument from '../components/OfficialDocument.astro';
 ---
 
 <CollectionIndexLayout
   title="Research"
   eyebrow="Core Direction"
-  intro="This page now copies the official research content into the playground and presents it inside the new visual system, instead of reducing it to a thin theme summary."
-  description="Research directions for the NMDL playground prototype."
+  intro="Research directions and methods described on the official NMDL website."
+  description="NMDL research from the official website."
 >
-  <article class="official-prose">
-    <ResearchContent />
-  </article>
+  <OfficialDocument name="research" />
 </CollectionIndexLayout>

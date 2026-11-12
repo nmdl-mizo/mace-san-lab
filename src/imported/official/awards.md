@@ -5,6 +5,21 @@ description: "Award"
 image: ""
 draft: false
 ---
+1.  **Ryotaro Sahashi**, **Po-Yen Chen**, and **Teruyasu Mizoguchi**  
+    Young Researcher Award  
+    ACSIN-16 & ICSPM34, Arcrea HIMEJI, October 2026  
+    “Elucidating Atomistic Polarization Switching Dynamics in Hf0.5Zr0.5O2 via Electric-Field-Induced Molecular Dynamics with Machine Learning Force Fields”
+
+1.  **佐橋遼太朗**，**Chen Po-Yen**，**溝口照康**  
+    優秀ポスター賞  
+    日本金属学会2026年秋季第179回講演大会，秋田大学 手形キャンパス，September 2026  
+    「電場印加分子動力学法を用いたScAlNの強誘電特性の構造効果と結合効果の分離」
+
+1.  **佐橋遼太朗**，**Chen Po-Yen**，**溝口照康**  
+    応用物理学会講演奨励賞  
+    第73回応用物理学会春季学術講演会，東京科学大学 大岡山キャンパス，March 2026  
+    「機械学習力場によるScAlNの強誘電特性への組成・構造歪み効果の解析」
+
 1.  **Yujeong Choi**  
     Best Poster Award, 2026 Workshop of PNU-HU, 2026, Jan.20th
 

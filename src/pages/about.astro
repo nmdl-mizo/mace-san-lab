@@ -1,19 +1,22 @@
 ---
-import { render } from 'astro:content';
-
-import SingletonPageLayout from '../layouts/SingletonPageLayout.astro';
-import { getPageEntry } from '../lib/content';
-
-const entry = await getPageEntry('about');
-const { Content } = await render(entry);
+import CollectionIndexLayout from '../layouts/CollectionIndexLayout.astro';
+import OfficialDocument from '../components/OfficialDocument.astro';
 ---
 
-<SingletonPageLayout
-  title={entry.data.title}
-  eyebrow={entry.data.eyebrow}
-  summary={entry.data.summary}
-  image={entry.data.image}
-  highlights={entry.data.highlights}
+<CollectionIndexLayout
+  title="About NMDL"
+  eyebrow="Nano Materials Design Laboratory"
+  intro="Research and contact information from the official NMDL website."
+  description="NMDL research and address from the official website."
 >
-  <Content />
-</SingletonPageLayout>
+  <div class="space-y-14">
+    <section aria-labelledby="about-research">
+      <h2 id="about-research" class="mb-6 font-display text-3xl">Research</h2>
+      <OfficialDocument name="research" />
+    </section>
+    <section aria-labelledby="about-address">
+      <h2 id="about-address" class="mb-6 font-display text-3xl">Address and Contact</h2>
+      <OfficialDocument name="address" />
+    </section>
+  </div>
+</CollectionIndexLayout>

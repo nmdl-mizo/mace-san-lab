@@ -1,0 +1,177 @@
+{
+  "source_repository": "https://github.com/nmdl-mizo/nmdl-mizo.github.io",
+  "source_commit": "abeb8541e3175c76866033c2980c6f137e39f8d4",
+  "files": [
+    {
+      "source": "src/content/about/english/-index.md",
+      "destination": "src/imported/official/research.md",
+      "source_text_sha256": "caa20a18afd77b0d8a6f1cb3e330844fa2a5ae828e10d6846585f5f5a8f2ad13"
+    },
+    {
+      "source": "src/content/environment/english/-index.md",
+      "destination": "src/imported/official/environment.md",
+      "source_text_sha256": "55f3f693b36d951c94f54abcf3cab5026152e30fcd8e724199ae0dc6f4dd3382"
+    },
+    {
+      "source": "src/content/join/english/-index.md",
+      "destination": "src/imported/official/join.md",
+      "source_text_sha256": "ae4d8e463329679a3831e7f9d9ac98b0fd39f189ffe24b5cb84adb8d9a5fc378"
+    },
+    {
+      "source": "src/content/manuscript/english/-index.md",
+      "destination": "src/imported/official/manuscripts.md",
+      "source_text_sha256": "4c2f70ebba1781b46b49e40291abe54effbd2f64a21d518d9cfcb51034f2f830"
+    },
+    {
+      "source": "src/content/invited/english/-index.md",
+      "destination": "src/imported/official/invited.md",
+      "source_text_sha256": "3767161fc0fd703b1c73ec5bf54930d0a155bdafcbe31fd2c5b1940105d4e986"
+    },
+    {
+      "source": "src/content/presentation/english/-index.md",
+      "destination": "src/imported/official/presentations.md",
+      "source_text_sha256": "9939734c9312941abad663084ecfdfbe95676898d7114fad24dd4309b5dca932"
+    },
+    {
+      "source": "src/content/book/english/-index.md",
+      "destination": "src/imported/official/books.md",
+      "source_text_sha256": "1f5ed004c9e21aed71854b51923a141670a9022338e29210750c27176a0ad731"
+    },
+    {
+      "source": "src/content/award/english/-index.md",
+      "destination": "src/imported/official/awards.md",
+      "source_text_sha256": "d8d912936076ff1dcc192afa33f731c84922506728f1efdba8fbde987d2b7a7c"
+    },
+    {
+      "source": "src/content/member/english/-index.md",
+      "destination": "src/imported/official/members.md",
+      "source_text_sha256": "d93b700b18d0b722cdcad3f2c74cbefde98efbc037e0c4a099e6c06d02a9246a"
+    },
+    {
+      "source": "src/content/alumni/english/-index.md",
+      "destination": "src/imported/official/alumni.md",
+      "source_text_sha256": "4824bfffb4bbb512ae0e8bc26f223dcbbdab9d489a581265b0389ee864cc9579"
+    },
+    {
+      "source": "src/content/news/english/-index.md",
+      "destination": "src/imported/official/news.md",
+      "source_text_sha256": "481db93e03c6b850a152fc7c7691eb0227aed82ed6753d4b6c677117a0e6c9dd"
+    },
+    {
+      "source": "src/content/address/english/-index.md",
+      "destination": "src/imported/official/address.md",
+      "source_text_sha256": "4daa0a560a029e6f99a5d01f658ab87198f77250db9f5a268897e97dafd8760a"
+    },
+    {
+      "source": "src/content/homepage/english/-index.md",
+      "destination": "src/imported/official/homepage.md",
+      "source_text_sha256": "2b2788763a6d559e64139cf2afce2c7be134b8c83f284f1452d8ae969ca24209"
+    },
+    {
+      "source": "src/content/about/french/-index.md",
+      "destination": "src/imported/official/ja/research.md",
+      "source_text_sha256": "00d98cbc25cf3cae07033945ba3e6bde384e8230ef4207c8698b0d6d365030e7"
+    },
+    {
+      "source": "src/content/environment/french/-index.md",
+      "destination": "src/imported/official/ja/environment.md",
+      "source_text_sha256": "4f8e28c0e42ba668357c3b25311094fe81d0b5a2436c001eb06d1acd4451154e"
+    },
+    {
+      "source": "src/content/join/french/-index.md",
+      "destination": "src/imported/official/ja/join.md",
+      "source_text_sha256": "4b4ce4d750cf70360d0329e28ab0742240527d83296338adeb44783be4d84af9"
+    },
+    {
+      "source": "src/content/manuscript/french/-index.md",
+      "destination": "src/imported/official/ja/manuscripts.md",
+      "source_text_sha256": "4c2f70ebba1781b46b49e40291abe54effbd2f64a21d518d9cfcb51034f2f830"
+    },
+    {
+      "source": "src/content/invited/french/-index.md",
+      "destination": "src/imported/official/ja/invited.md",
+      "source_text_sha256": "3767161fc0fd703b1c73ec5bf54930d0a155bdafcbe31fd2c5b1940105d4e986"
+    },
+    {
+      "source": "src/content/presentation/french/-index.md",
+      "destination": "src/imported/official/ja/presentations.md",
+      "source_text_sha256": "9939734c9312941abad663084ecfdfbe95676898d7114fad24dd4309b5dca932"
+    },
+    {
+      "source": "src/content/book/french/-index.md",
+      "destination": "src/imported/official/ja/books.md",
+      "source_text_sha256": "1c26f0f42ee9bacd43b12aefec4c25f67c4f2a01ff150e883c992f50b62c9b3a"
+    },
+    {
+      "source": "src/content/award/french/-index.md",
+      "destination": "src/imported/official/ja/awards.md",
+      "source_text_sha256": "ace2fe5238349f3dff2c03c6484c17becc680ca4dd942285fedb47ef745c53da"
+    },
+    {
+      "source": "src/content/member/french/-index.md",
+      "destination": "src/imported/official/ja/members.md",
+      "source_text_sha256": "c8239c8710543194d68efb76a2348343e9d293d0c5bf7f63fd82116a98d2bae2"
+    },
+    {
+      "source": "src/content/alumni/french/-index.md",
+      "destination": "src/imported/official/ja/alumni.md",
+      "source_text_sha256": "6a286383c2171b2a915d5ed407f2d4c0aa78454feda1efc8360eb649129b2eff"
+    },
+    {
+      "source": "src/content/news/french/-index.md",
+      "destination": "src/imported/official/ja/news.md",
+      "source_text_sha256": "ff4e6b6e8b430be7150f15953c3196227ea0aa59b54e1dee88d10d9adac0ef52"
+    },
+    {
+      "source": "src/content/address/french/-index.md",
+      "destination": "src/imported/official/ja/address.md",
+      "source_text_sha256": "92d313d62f2fec1cc11a578c942229d709329e3e640478f36baea087d9e22b4e"
+    },
+    {
+      "source": "src/content/homepage/french/-index.md",
+      "destination": "src/imported/official/ja/homepage.md",
+      "source_text_sha256": "cc3dc92d1ffff84ce06df0334c0d552b9885c67075115319523fb1f085fae94b"
+    }
+  ],
+  "homepage_staff": [
+    {
+      "name": "Professor, PI, Teruyasu Mizoguchi （教授・溝口 照康）, Ph. D.",
+      "role": "Staff",
+      "group": "Staff",
+      "image": "/images/official/mem/image1.png"
+    },
+    {
+      "name": "Assistant Professor, Kunyen Liao, Ph. D.",
+      "role": "Staff",
+      "group": "Staff",
+      "image": "/images/official/mem/image7.png"
+    },
+    {
+      "name": "Technical Staff, Yutaka Yanaba（シニアエキスパート（技術）・簗場　豊）,",
+      "role": "Staff",
+      "group": "Staff",
+      "image": "/images/official/mem/yanaba.png"
+    },
+    {
+      "name": "Administrative staff, Yoko Matsuo（秘書・松尾　陽子）",
+      "role": "Staff",
+      "group": "Staff",
+      "image": "/images/official/mem/image31.jpeg"
+    }
+  ],
+  "homepage_objectives": {
+    "en": [
+      "A deep understanding of atomic arrangements and chemical bonding, and their relationship to functional properties, enables the realization of Designed Materials, which can dramatically accelerate the development of new materials. To achieve this, it is essential to integrate computation, measurement, and analysis to uncover the origins of functionality and to establish the underlying mechanisms and universal design principles.",
+      "At the Nano Materials Design Laboratory (NMDL), Institute of Industrial Science, The University of Tokyo, we integrate artificial intelligence, computational simulations, atomic-scale characterization, and Physical AI to advance materials research in a unified manner—from a deep understanding of structure–property relationships to the creation of Designed Materials. Through this integrated approach, we aim to establish a new paradigm of materials science that enables autonomous materials design."
+    ],
+    "ja": [
+      "物質の原子配列と化学結合を深く理解し，機能発現との相関からDesigned Materialsを実現できれば，新物質開発を飛躍的に加速させることが可能となります．そのためには，計算・計測・解析を統合し，機能発現の起源に迫るとともに，そのメカニズムと普遍的な設計指針を明らかにしていく必要があります．",
+      "東京大学・生産技術研究所・ナノ物質設計工学研究室（Nano Materials Design Laboratory: NMDL）では，人工知能技術，計算機シミュレーション，原子レベル計測およびPhysical AIを融合することで，構造機能相関の深い理解からDesigned Materialsの創出までを一体的に推進し，自律的な物質設計を実現する新たな物質科学のパラダイムの確立を目指しています．"
+    ]
+  },
+  "latest_awards": [
+    "Ryotaro Sahashi, Po-Yen Chen, and Teruyasu Mizoguchi  \n    Young Researcher Award  \n    ACSIN-16 & ICSPM34, Arcrea HIMEJI, October 2026  \n    “Elucidating Atomistic Polarization Switching Dynamics in Hf0.5Zr0.5O2 via Electric-Field-Induced Molecular Dynamics with Machine Learning Force Fields”",
+    "佐橋遼太朗，Chen Po-Yen，溝口照康  \n    優秀ポスター賞  \n    日本金属学会2026年秋季第179回講演大会，秋田大学 手形キャンパス，September 2026  \n    「電場印加分子動力学法を用いたScAlNの強誘電特性の構造効果と結合効果の分離」",
+    "佐橋遼太朗，Chen Po-Yen，溝口照康  \n    応用物理学会講演奨励賞  \n    第73回応用物理学会春季学術講演会，東京科学大学 大岡山キャンパス，March 2026  \n    「機械学習力場によるScAlNの強誘電特性への組成・構造歪み効果の解析」"
+  ]
+}

@@ -1,15 +1,13 @@
 ---
 import CollectionIndexLayout from '../layouts/CollectionIndexLayout.astro';
-import EnvironmentContent from '../imported/official/environment.md';
+import OfficialDocument from '../components/OfficialDocument.astro';
 ---
 
 <CollectionIndexLayout
   title="Environment"
   eyebrow="Research Infrastructure"
-  intro="The environment section is now being rebuilt from the official laboratory content, including the actual computing, software, analysis, and sample-preparation infrastructure."
-  description="Research environment for the NMDL playground prototype."
+  intro="Research facilities and infrastructure described on the official NMDL website."
+  description="NMDL research environment from the official website."
 >
-  <article class="official-prose">
-    <EnvironmentContent />
-  </article>
+  <OfficialDocument name="environment" />
 </CollectionIndexLayout>

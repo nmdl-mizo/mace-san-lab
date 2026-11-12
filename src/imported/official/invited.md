@@ -7,6 +7,78 @@ draft: false
 ---
  <p align="right"> **Bold** *indicates presenter*
  
+1.  **高原泉**
+    ”AIエージェント時代の材料科学研究“，
+    JAPAN SCIENTIST AI JAM SESSION 2026，オンライン，Oct. 27，2026．
+
+1.  **溝口照康**
+    ”スペクトルとAIが拓く物質解析と逆設計“，
+    X線分析討論会，くにびきメッセ，島根，Oct. 22，2026．
+
+1.  **溝口照康**
+    ”AI for Science時代のマテリアル研究ーAIで材料を観る，動かす，創るー“，
+    RIST第22回材料系ワークショップ，秋葉原（ハイブリッド），東京，Oct. 21，2026．
+
+1.  **溝口照康**
+    ”AI for Atomistic Materials Understanding: From Spectroscopy to Generative Design“，
+    ACSIN-16 & ICSPM34，姫路，兵庫，Oct. 20，2026．
+
+1.  **溝口照康**
+    ”インフォマティクスが切り拓くAI駆動型材料研究“（基調講演），
+    附置研・センター会議第1部会シンポジウム，オンライン，Oct. 13，2026．
+
+1.  **溝口照康**
+    ”From EELS to Generative AI: Thermal Expansion, Local Coordination, and Inverse Analysis“，
+    RIKEN Seminar，理化学研究所，和光，Sep. 30，2026．
+
+1.  **溝口照康**
+    ”AI×材料科学 ～生成AI・AIエージェントからPhysical AIへ～“，
+    東京都市大学－生産技術研究所 学術連携シンポジウム，東京都市大学渋谷 PXU，東京，Sep. 30，2026．
+
+1.  **高原泉**, 溝口照康
+    ”大規模言語モデルエージェントに基づく材料設計手法の開発“
+    第50回日本磁気学会学術講演会，東京科学大学大岡山キャンパス，2026年9月3日．
+
+1.  **溝口照康**
+    ”AI-Driven Materials Discovery: From Atomistic Simulation to Generative Design“，
+    4th JAsCerS Special Symposium 2026 on the Satellite Program of ICC11，札幌，北海道，Sep. 6，2026．
+
+1.  **Teruyasu Mizoguchi**
+    ”AI for Ferroelectric Materials: From Atomistic Dynamics to Generative Design“，
+    15th Korea-Japan Conference on Ferroelectrics，KAIST，大田，韓国，Aug. 27，2026．
+
+1.  **Teruyasu Mizoguchi**
+    ”Inverse analysis for spectrum and materials“（Plenary Talk），
+    TOCAT10 Pre-Symposium in Sendai，仙台，Aug. 17，2026．
+
+1.  **溝口照康**
+    ”AI技術を活用したマテリアル探索と解析“，
+    CAMMフォーラム，オンライン，Aug. 7，2026．
+
+1.  **溝口照康**
+    ”AIと共に物質を設計する“，
+    鶴岡高専セミナー，鶴岡，山形，Aug. 4，2026．
+
+1.  **溝口照康**
+    ”量子コンピュータは半導体材料開発にどう貢献できるのか～シミュレーションサイドからみた期待～“，
+    Qunasisセミナー，RISE-A，大手町，東京，July 28，2026．
+
+1.  **溝口照康**
+    ”「情報基礎で学ぶコト」を活用した物質開発“，
+    埼玉大学情報基礎特別講義，埼玉大学，埼玉，July 24，2026．
+
+1.  **高原泉**
+    ”大規模言語モデルを基盤とした自律型材料探索・合成手法の開発“
+    第1回 AI for Scienceフロンティアセミナー，理化学研究所，2026年7月13日．
+
+1.  **溝口照康**
+    ”AI技術およびシミュレーションを活用した物質研究“，
+    東京高専セミナー，八王子，東京，July 10，2026．
+
+1.  **高原 泉**
+    ”LLMエージェントを活用したAI駆動材料開発に向けた取り組み“
+    第7回AIロボット駆動科学研究会，Shimazu Tokyo Innovation Plaza，2026年5月11日．
+
 1.  **溝口照康**，**高原泉**，  
     ”生成AI・LLMを活用した物質研究と新たな研究連携の可能性“  
     第11回デジラボ研究会，本郷, 東京，March 16th, 2026
@@ -15,8 +87,12 @@ draft: false
     ”Machine-learning-driven Simulation and Generative Design of Functional Materials“, 
     Synchrotron Frontier 2026, March 11th, 2026
 
+1.  **Izumi Takahara**
+    ”Leveraging Large Language Models for Generative Design and Discovery of Inorganic Materials“
+    第23回マテリアル基盤セミナー，NIMS，2026年2月9日．
+
 1.  **Teruyasu Mizoguchi**  
-    ”Machine-learning-driven Simulation and Generative Design of Functional Materials“, 
+    ”AI-Driven Analysis of EELS/XAFS for Exploring Synchrotron Frontiers in MaterialsDesign“, 
     PNU-HU-international workshop, Jan. 20th, 2026
 
 1.  **Teruyasu Mizoguchi**  

@@ -1,19 +1,4 @@
 ---
-import { render } from 'astro:content';
-
-import SingletonPageLayout from '../layouts/SingletonPageLayout.astro';
-import { getPageEntry } from '../lib/content';
-
-const entry = await getPageEntry('technology');
-const { Content } = await render(entry);
+import { withBasePath } from '../lib/paths';
+return Astro.redirect(withBasePath('/environment/'));
 ---
-
-<SingletonPageLayout
-  title={entry.data.title}
-  eyebrow={entry.data.eyebrow}
-  summary={entry.data.summary}
-  image={entry.data.image}
-  highlights={entry.data.highlights}
->
-  <Content />
-</SingletonPageLayout>

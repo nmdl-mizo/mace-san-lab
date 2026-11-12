@@ -1,60 +1,13 @@
 ---
 import CollectionIndexLayout from '../layouts/CollectionIndexLayout.astro';
-import { groupedMembers } from '../data/members';
-import { withBasePath } from '../lib/paths';
+import OfficialDocument from '../components/OfficialDocument.astro';
 ---
 
 <CollectionIndexLayout
   title="Members"
   eyebrow="Laboratory People"
-  intro="The current roster is now synced much more closely to the official laboratory page, including the full student cohort rather than only doctoral members, plus the experimental AI-Agent entry."
-  description="Members of NMDL in the experimental playground prototype."
+  intro="Laboratory members as listed on the official NMDL website."
+  description="NMDL laboratory members from the official website."
 >
-  <div class="space-y-14">
-    <section class="flex flex-col gap-4 border border-white/10 bg-white/[0.03] p-6 sm:flex-row sm:items-end sm:justify-between sm:p-7">
-      <p class="max-w-3xl text-[1rem] leading-7 text-white/68">
-        This page now shows the current staff, researchers, students, and research students as distinct groups, plus the experimental AI-Agent entry in the playground roster.
-      </p>
-      <a
-        href="https://nmdl-mizo.github.io/en/member"
-        target="_blank"
-        rel="noreferrer"
-        class="inline-flex items-center gap-3 font-display text-[11px] uppercase tracking-[0.24em] text-white/64 transition-colors duration-300 hover:text-accent-blue"
-      >
-        Official member page <span aria-hidden="true">↗</span>
-      </a>
-    </section>
-
-    {groupedMembers.map((group) => (
-      <section>
-        <div class="font-display text-[11px] uppercase tracking-[0.28em] text-accent-blue">{group.label}</div>
-        <div class="mt-6 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-          {group.members.map((member) => (
-            <article class="overflow-hidden border border-white/10 bg-white/[0.03]">
-              <img src={withBasePath(member.image)} alt={member.name} class="aspect-[4/3] w-full object-cover object-top" />
-              <div class="p-6 sm:p-7">
-                <h2 class="break-words font-display text-[1.9rem] leading-none text-white">{member.name}</h2>
-                <p class="mt-3 text-sm uppercase tracking-[0.18em] text-accent-blue">{member.role}</p>
-                {member.note ? <p class="mt-5 text-[1rem] leading-7 text-white/72">{member.note}</p> : null}
-                {member.capabilities?.length ? (
-                  <div class="mt-5 space-y-3">
-                    <div class="font-display text-[10px] uppercase tracking-[0.22em] text-warm-gold">Capabilities</div>
-                    <ul class="space-y-2 text-[0.95rem] leading-7 text-white/68">
-                      {member.capabilities.map((capability) => (
-                        <li class="flex gap-3">
-                          <span class="text-accent-blue">•</span>
-                          <span>{capability}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                ) : null}
-                {member.email ? <p class="mt-5 text-sm text-white/54">{member.email}</p> : null}
-              </div>
-            </article>
-          ))}
-        </div>
-      </section>
-    ))}
-  </div>
+  <OfficialDocument name="members" />
 </CollectionIndexLayout>

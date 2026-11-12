@@ -6,6 +6,8 @@ launch-video/
 output/
 # generated types
 .astro/
+__pycache__/
+*.pyc
 
 # dependencies
 node_modules/

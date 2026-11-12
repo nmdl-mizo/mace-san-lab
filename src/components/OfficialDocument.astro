@@ -1,0 +1,30 @@
+---
+import provenance from '../imported/official/provenance.json';
+interface Props { name: string; }
+const { name } = Astro.props;
+const documents = import.meta.glob('../imported/official/**/*.md', { eager: true });
+const English = (documents[`../imported/official/${name}.md`] as { default: any }).default;
+const Japanese = (documents[`../imported/official/ja/${name}.md`] as { default: any }).default;
+---
+<div class="official-document" data-document>
+  <div class="language-controls" role="group" aria-label="Content language">
+    <button type="button" data-language="en" aria-pressed="true">English</button>
+    <button type="button" data-language="ja" aria-pressed="false">日本語</button>
+    <a href={`${provenance.source_repository}/tree/${provenance.source_commit}`} target="_blank" rel="noreferrer">Official source · {provenance.source_commit.slice(0,7)} ↗</a>
+  </div>
+  <article class="official-prose" data-edition="en" lang="en"><English /></article>
+  <article class="official-prose" data-edition="ja" lang="ja" hidden><Japanese /></article>
+</div>
+<script>
+  document.querySelectorAll<HTMLElement>('[data-document]').forEach(group => {
+    group.querySelectorAll<HTMLButtonElement>('[data-language]').forEach(button => {
+      button.addEventListener('click', () => {
+        group.querySelectorAll<HTMLButtonElement>('[data-language]').forEach(control => control.setAttribute('aria-pressed', String(control === button)));
+        group.querySelectorAll<HTMLElement>('[data-edition]').forEach(edition => { edition.hidden = edition.dataset.edition !== button.dataset.language; });
+      });
+    });
+  });
+</script>
+<style>
+  .language-controls{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:30px;font-size:12px}.language-controls button{border:1px solid currentColor;min-height:44px;padding:10px 16px;background:transparent;color:var(--body-strong);cursor:pointer}.language-controls button[aria-pressed=true]{background:#ddf56a;color:#252421;border-color:#ddf56a}.language-controls a{color:var(--body-muted);overflow-wrap:anywhere}.official-document :global([hidden]){display:none!important}.official-document :global(img){max-width:100%;height:auto}.official-document :global(article){overflow-wrap:anywhere}.official-document :global(table){display:block;max-width:100%;overflow:auto}
+</style>

@@ -7,34 +7,45 @@ draft: false
 ---
  <p align="right"> **Bold** *indicates Mizoguchi Lab. member.* </p>
  
+1.  **YJ. Choi**, et al.,  
+    under preparation
+
+1.  **S. Ozawa**, et al.,  
+    under preparation
+
+1.  **L. Wong**, **Y. R. Jin**, and **T. Mizoguchi**  
+    under preparation
+
 1.  **K. Miyamoto**, **I. Okuda**, **I. Takahara**, and **T. Mizoguchi**  
     under preparation
 
-1.  KY. Liao, ..., **T. Mizoguchi**, ..., K. Suenaga  
-    under preparation
+1.  **Y.R. Jin**, **L. Wong**, and **T. Mizoguchi**  
+    submitted
+
+1.  KY. Liao, R. Senga, Y. Lin, **T. Mizoguchi**, K. Suenaga  
+    submitted
+
+1.  **Pol Benítez**, T. Ouchi, C. Cazorla, and **Teruyasu Mizoguchi**    
+    submitted 
 
 1.  **Y. Wang** and **T. Mizoguchi**  
     "All-Electron Single-Atom Reference Correction for Absolute Transition Energies in Fixed-Reference PAW-XCH Calculations"  
     submitted  [**arxiv**](https://arxiv.org/abs/2608.09216)
+
+1.  **I. Takahara**, K. Nishio, A. Aiba, S. Kobayashi, T. Nakajima, T. Hitosugi, and **T. Mizoguchi**  
+    "Hypothesis-Driven Autonomous Materials Synthesis with Multimodal LLM Agents"  
+    submitted [**arxiv**](https://arxiv.org/abs/2609.18598)
 
 1.  **I. Takahara** and **T. Mizoguchi**  
     "Toward Auditable AI Scientists: A Hypothesis Evolution Protocol for LLM Agents"  
     submitted [**arxiv**](https://arxiv.org/abs/2607.09195)
 
 1.  **R. Sahashi**, **P. Y. Chen**, and **T. Mizoguchi**  
-    "Transient Detour and Cooperative Oxygen Exchange in the Polarization Switching of Ferroelectric Hf0.5Zr0.5O2"  
-    submitted [**arxiv**](https://arxiv.org/abs/2607.26597)
+    "Atomistic Origin and Strain Control of the Finite-Temperature Dielectric Response in BaTiO3"  
+    submitted [**arxiv**](https://arxiv.org/abs/2609.07219)
 
 1.  **L. Wong**, **Y. R. Jin**, and **T. Mizoguchi**  
     submitted
-
-1.  **Y. Choi**, **T. Sugiura**,......, and **T. Mizoguchi**  
-    "Intrinsic Defect Energetics and Fluorine Doping Effects in Li2CO3 and Li2O2: A First-Principles Study"  
-    submitted [**arxiv**](https://arxiv.org/abs/2606.25408)  
-
-1.  **P. Y. Chen** and **T. Mizoguchi**  
-    "Transition from Homogeneous to Domain-Wall-Mediated Polarization Switching in BaTiO3: A Machine-Learning Molecular Dynamics Study"  
-    submitted [**arxiv**](https://arxiv.org/abs/2605.25485)  
 
 1.  **S. Ozawa**, **I. Takahara**, and **T. Mizoguchi**  
     "Scale-Dependent Input Representation and Confidence Estimation for LLMs in Materials Property Prediction"  
@@ -44,18 +55,6 @@ draft: false
     "Ultrafast Sliding Ferroelectric Switching in Bilayer Hexagonal Boron Nitride Revealed by Deep Learning Molecular Dynamics"  
      submitted   [**arxiv**](https://arxiv.org/abs/2604.27342)
 
-1.  **I. Okuda**, **I. Takahara**, and **T. Mizoguchi**  
-    "Inverse Materials Design via Joint Generation of Crystal Structures and Local Electronic Descriptors"  
-    submitted   [**arxiv**](https://arxiv.org/abs/2605.01286)
-
-1.  **YR. Jin**, J. Lee, and **T. Mizoguchi**   
-    "Learning Unfolded Band Structures from Spectra"  
-    submitted
-
-1.  **Y. Wang**, A. Varadwaj, **T. Mizoguchi**, and M. Kotsugi  
-    "Decoding Dopant-Induced Electronic Modulation in Graphene via Region-Resolved Machine Learning of XANES"  
-    submitted  [**arxiv**](https://arxiv.org/abs/2603.29370)
-
 1.  **R. Sahashi**, **P. Y. Chen**, and **T. Mizoguchi**  
     "Origin of Reduced Coercive Field in ScAlN: Synergy of Structural Softening and Dynamic Atomic Correlations"  
     submitted, (dynamic softening) [**arxiv**](https://arxiv.org/abs/2603.18710)
@@ -63,19 +62,43 @@ draft: false
 1.  H.K. Moberg, **T. Mizoguchi**, ...., and A. Hellman  
     submitted
 
-1.  **R. Okubo**, **Y. Fujikata**, **I. Takahara**, and **T. Mizoguchi**  
-    "Generative Inverse Estimation of 3D Atomic Coordination from Near-Edge Spectra via Equivariant Diffusion Models"  
-    submitted, [**arxiv**](https://arxiv.org/abs/2602.16133)
-
-1.  **T. Sugiura** and **T. Mizoguchi**  
-    "Achieving Robust Extrapolation in Materials Property Prediction via Decoupled Transfer Learning"  
-    submitted, [**arxiv**](https://arxiv.org/abs/2602.18054)
-
     **— 2026 —**  
+
+1.   "Generative Inverse Estimation of 3D Atomic Coordination from Near-Edge Spectra via Equivariant Diffusion Models"  
+     **R. Okubo**, **Y. Fujikata**, **I. Takahara**, and **T. Mizoguchi**  
+     *npj Comp. Mater*, (2026) in press [**arxiv**](https://arxiv.org/abs/2602.16133)
+
+1.   "Achieving Robust Extrapolation in Materials Property Prediction via Decoupled Transfer Learning"  
+     **T. Sugiura** and **T. Mizoguchi**  
+    *PRX intelligence*, (2026) in press [**arxiv**](https://arxiv.org/abs/2602.18054)
+
+1.   "Inverse Materials Design via Joint Generation of Crystal Structures and Local Electronic Descriptors"  
+     **I. Okuda**, **I. Takahara**, and **T. Mizoguchi**  
+    *npj Comp. Mater*, 12 (2026) 332 [**OpenAcess**](https://www.nature.com/articles/s41524-026-02322-4), [**Press Release**](https://www.eurekalert.org/news-releases/1147428)
+
+1.  "Transient Detour and Cooperative Oxygen Exchange in the Polarization Switching of Ferroelectric Hf0.5Zr0.5O2"  
+    **R. Sahashi**, **P. Y. Chen**, and **T. Mizoguchi**  
+    *ACS Appl. Electron. Mater.*, (2026) in press. [**arxiv**](https://arxiv.org/abs/2607.26597)  DOI:10.1021/acsaelm.6c01804
+
+1.  "Decoding Dopant-Induced Electronic Modulation in Graphene via Region-Resolved Machine Learning of XANES"  
+    **Y. Wang**, A. Varadwaj, **T. Mizoguchi**, and M. Kotsugi  
+    *Digital Discovery*, (2026) in press. [**arxiv**](https://arxiv.org/abs/2603.29370)  
+
+1.  "Intrinsic Defect Energetics and Fluorine Doping Effects in Li2CO3 and Li2O2: A First-Principles Study"  
+    **Y. Choi**, **T. Sugiura**, K. Mukai, N. Ishihara, S. Nakanishi, and **T. Mizoguchi**  
+    *J. Phys. Chem. C*, 130 (2026) 14726−14734. [**OpenAcess**](https://pubs.acs.org/jpccck/article/130/42/14726/5448426/Intrinsic-Defect-Energetics-and-Fluorine-Doping)  
+
+1.  "Learning Unfolded Band Structures from Spectra"  
+     **YR. Jin**, J. Lee, and **T. Mizoguchi**  
+     *Digital Discovery*, 5 (2026) 4221–4230 [**OpenAcess**](https://pubs.rsc.org/dd/article/5/10/4221/1296732/Learning-unfolded-band-structures-from-spectra).  
 
 1.  "Surface Cleaning and Trap Passivation of Solution Crystallized AgBiS2 Thin Film for Improved Solar Cell Performance"  
      L. Cojocaru, A. Jena, H. Tamegai, M. Kamiko, **T. Mizoguchi**, T. Kubo, S. Uchida, H. Segawa  
-    *ACS Appl. Ene. Mater.*, (2026) in press
+    *ACS Appl. Ene. Mater.*, 9 (2026) 10649–10660.
+
+1.  "Transition from Homogeneous to Domain-Wall-Mediated Polarization Switching in BaTiO3: A Machine-Learning Molecular Dynamics Study"  
+     **P. Y. Chen** and **T. Mizoguchi**  
+    *Phys. Rev. B* 114 (2026) 134312. [**arxiv**](https://arxiv.org/abs/2605.25485).
 
 1.   "Vacancy-Driven Phase Separation Governs Li+ Transport Degradation in Li2−xO2 : A Computational Study Relevant to Li–O2 Batteries"  
      N. Ishihara,K. Nagita, **T. Sugiura**, Y. Mukoyama, **T. Mizoguchi**, and S. Nakanishi  
@@ -83,7 +106,7 @@ draft: false
 
 1.   "Twist-Angle Engineering of Moiré Potentials for High-Performance Ionics in Bilayer Graphene"  
      **G. Fukuzawa**, **Y. Lee**, and **T. Mizoguchi**  
-    *J. Phys. Chem. C*, 130 (2026) 10142-10151 [**here**](https://pubs.acs.org/jpccck/article/130/29/10142/5208798/Twist-Angle-Engineering-of-Moire-Potentials-for), [**arxiv**](https://arxiv.org/abs/2603.27453)
+    *J. Phys. Chem. C*, 130 (2026) 10142-10151 [**here**](https://pubs.acs.org/jpccck/article/130/29/10142/5208798/Twist-Angle-Engineering-of-Moire-Potentials-for), [**arxiv**](https://arxiv.org/abs/2603.27453)  
 
 1.  "Unraveling the Impact of Interface Modification on Perovskite Microstructure and Photovoltaic Efficiency"  
      S. Takahashi, H. Tamegai, **T. Mizoguchi**, S. Uchida, and H. Segawa  
@@ -91,7 +114,7 @@ draft: false
 
 1.  *Topical Review:* "Inverse Analysis of Near-edge Spectra: Toward the Prediction of Chemical Bonding and Atomic Structure"  
      **T. Mizoguchi**, **P. Y. Chen**, **I. Takahara**, **R. Okubo**, and **Y. Fujikata**  
-    *J. Phys.:Cond. Matter*, (2026) in press [**here**](https://iopscience.iop.org/article/10.1088/1361-648X/ae7b9e/meta)
+    *J. Phys.:Cond. Matter*, 38 (2026) 293001-1-29 [**here**](https://iopscience.iop.org/article/10.1088/1361-648X/ae7b9e/meta)
 
 1.   "Roadmap on Advancements of the FHI-aims Software Package"  
      J. W. Abbott,... **I. Takahara**, **K. Shibata**, **T. Mizoguchi**, et al.,  

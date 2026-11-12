@@ -69,7 +69,7 @@ Nice space and many books and whiteboards for anytime discussions.
 
 - [<u>LAMMPS</u>](https://www.lammps.org/#gsc.tab=0)
 
-- [<u>GULP</u>](https://gulp.curtin.edu.au/index.html)
+- [<u>GULP</u>] (https://gulp.curtin.edu.au/index.html)
 
 - [<u>OpenMX</u>](https://www.openmx-square.org/)
 
@@ -94,8 +94,10 @@ Mizoguchi is an [<u>Ambassador</u>](https://www.3ds.com/science/science-ambassad
 
 <img src="/mace-san-lab/images/official/environment/KomabaCommons.jpg">
 
+<a href="https://sites.google.com/g.ecc.u-tokyo.ac.jp/komaba-commons-lab/" target="_blank" rel="noopener noreferrer"><img src="/mace-san-lab/images/official/environment/komaba-commons-lab-en.jpg" alt="Komaba Commons Lab." style="width:min(100%, 520px);height:auto;display:block;margin:0.5rem auto 0.75rem;" /></a>
+
 <u>[Komaba Commons Lab / 駒場コモンズラボ](https://sites.google.com/g.ecc.u-tokyo.ac.jp/komaba-commons-lab/)  </u>  
-Komaba Commons Labs established in April 2026.  "Komaba Commons Lab" is a future-oriented shared research infrastructure powered by AI and Physical AI.
+Komaba Commons Labs established in 2026.April.  "Komaba Commons Lab" is a future-oriented shared research infrastructure powered by AI and Physical AI.
 
 <img src="/mace-san-lab/images/official/environment/image10.png" style="width:3.27019in;height:0.66181in"/>
 
