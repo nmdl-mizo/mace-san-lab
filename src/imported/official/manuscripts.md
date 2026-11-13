@@ -7,9 +7,6 @@ draft: false
 ---
  <p align="right"> **Bold** *indicates Mizoguchi Lab. member.* </p>
  
-1.  **YJ. Choi**, et al.,  
-    under preparation
-
 1.  **S. Ozawa**, et al.,  
     under preparation
 
@@ -18,6 +15,14 @@ draft: false
 
 1.  **K. Miyamoto**, **I. Okuda**, **I. Takahara**, and **T. Mizoguchi**  
     under preparation
+
+1.  "Electric Fields Turn Vacancy-trapping Grain Boundaries into Li-Ion Pathways in Li2O"  
+    **Youjeong Choi**, **Po-Yen Chen**, **Tasuku Sugiura**, and **Teruyasu Mizoguchi**  
+    submitted
+
+1.  **Y. Wang** and **T. Mizoguchi**  
+    "Symmetry-Gated Sliding: Decoupling Interlayer Translation from Polarization Reversal in Boron Nitride Ferroelectrics"  
+    submitted [**arxiv**](https://arxiv.org/abs/2611.09025)
 
 1.  **Y.R. Jin**, **L. Wong**, and **T. Mizoguchi**  
     submitted
@@ -66,15 +71,15 @@ draft: false
 
 1.   "Generative Inverse Estimation of 3D Atomic Coordination from Near-Edge Spectra via Equivariant Diffusion Models"  
      **R. Okubo**, **Y. Fujikata**, **I. Takahara**, and **T. Mizoguchi**  
-     *npj Comp. Mater*, (2026) in press [**arxiv**](https://arxiv.org/abs/2602.16133)
+     *npj Comp. Mater*, (2026) [**OpenAccess**](https://www.nature.com/articles/s41524-026-02384-4), [**arxiv**](https://arxiv.org/abs/2602.16133), [**GitHub**](https://github.com/nmdl-mizo/ELNESDiff)
 
 1.   "Achieving Robust Extrapolation in Materials Property Prediction via Decoupled Transfer Learning"  
      **T. Sugiura** and **T. Mizoguchi**  
-    *PRX intelligence*, (2026) in press [**arxiv**](https://arxiv.org/abs/2602.18054)
+    *PRX intelligence*, (2026) in press [**arxiv**](https://arxiv.org/abs/2602.18054), [**GitHub**](https://github.com/nmdl-mizo/decoupled-gnn-transfer-learning)
 
 1.   "Inverse Materials Design via Joint Generation of Crystal Structures and Local Electronic Descriptors"  
      **I. Okuda**, **I. Takahara**, and **T. Mizoguchi**  
-    *npj Comp. Mater*, 12 (2026) 332 [**OpenAcess**](https://www.nature.com/articles/s41524-026-02322-4), [**Press Release**](https://www.eurekalert.org/news-releases/1147428)
+    *npj Comp. Mater*, 12 (2026) 332 [**OpenAcess**](https://www.nature.com/articles/s41524-026-02322-4), [**Press Release**](https://www.eurekalert.org/news-releases/1147428), [**GitHub**](https://github.com/nmdl-mizo/mattergen-e-)
 
 1.  "Transient Detour and Cooperative Oxygen Exchange in the Polarization Switching of Ferroelectric Hf0.5Zr0.5O2"  
     **R. Sahashi**, **P. Y. Chen**, and **T. Mizoguchi**  
