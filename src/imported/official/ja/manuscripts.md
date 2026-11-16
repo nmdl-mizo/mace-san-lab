@@ -16,9 +16,13 @@ draft: false
 1.  **K. Miyamoto**, **I. Okuda**, **I. Takahara**, and **T. Mizoguchi**  
     under preparation
 
+1.  "GPU acceleration of first-principles X-ray absorption spectra: an OpenACC port of XSpectra in Quantum ESPRESSO"  
+    **Yinan Wang** and **Teruyasu Mizoguchi**  
+    submitted
+
 1.  "Electric Fields Turn Vacancy-trapping Grain Boundaries into Li-Ion Pathways in Li2O"  
     **Youjeong Choi**, **Po-Yen Chen**, **Tasuku Sugiura**, and **Teruyasu Mizoguchi**  
-    submitted
+    submitted [**arxiv**](https://arxiv.org/abs/2611.17679)
 
 1.  **Y. Wang** and **T. Mizoguchi**  
     "Symmetry-Gated Sliding: Decoupling Interlayer Translation from Polarization Reversal in Boron Nitride Ferroelectrics"  

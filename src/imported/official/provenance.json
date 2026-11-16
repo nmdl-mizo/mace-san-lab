@@ -1,6 +1,6 @@
 {
   "source_repository": "https://github.com/nmdl-mizo/nmdl-mizo.github.io",
-  "source_commit": "b66273884aa2190b51ecd744cdf1ca789d7eaed8",
+  "source_commit": "22402cbd7405b25f1fe52152692672c876eaa2dd",
   "files": [
     {
       "source": "src/content/about/english/-index.md",
@@ -20,7 +20,7 @@
     {
       "source": "src/content/manuscript/english/-index.md",
       "destination": "src/imported/official/manuscripts.md",
-      "source_text_sha256": "8bdd41d70dddf66b4301f856eaac390eb568aaae4d77c421ef7d1e8d4a349ace"
+      "source_text_sha256": "30a09430120eb14c67bc274b964385010e84e666efbf014a41859ddc765cc464"
     },
     {
       "source": "src/content/invited/english/-index.md",
@@ -45,7 +45,7 @@
     {
       "source": "src/content/member/english/-index.md",
       "destination": "src/imported/official/members.md",
-      "source_text_sha256": "d93b700b18d0b722cdcad3f2c74cbefde98efbc037e0c4a099e6c06d02a9246a"
+      "source_text_sha256": "d8da346560a858bdfb4f3825e7680ff0c762183c9fda4affe45faa13e57745d5"
     },
     {
       "source": "src/content/alumni/english/-index.md",
@@ -70,27 +70,27 @@
     {
       "source": "src/content/about/french/-index.md",
       "destination": "src/imported/official/ja/research.md",
-      "source_text_sha256": "00d98cbc25cf3cae07033945ba3e6bde384e8230ef4207c8698b0d6d365030e7"
+      "source_text_sha256": "fa371dd7ca6c640862a2fcbc825344955cd4ab01015da2288a77bb5ebb2c12f5"
     },
     {
       "source": "src/content/environment/french/-index.md",
       "destination": "src/imported/official/ja/environment.md",
-      "source_text_sha256": "4f8e28c0e42ba668357c3b25311094fe81d0b5a2436c001eb06d1acd4451154e"
+      "source_text_sha256": "14265eaec017add79a7ed18b5416665b31bcb576891bbba53bd683170c320403"
     },
     {
       "source": "src/content/join/french/-index.md",
       "destination": "src/imported/official/ja/join.md",
-      "source_text_sha256": "4b4ce4d750cf70360d0329e28ab0742240527d83296338adeb44783be4d84af9"
+      "source_text_sha256": "71b1053578404eeca45100d7139de296d63ee0527296498fcf588bbad39c00ac"
     },
     {
       "source": "src/content/manuscript/french/-index.md",
       "destination": "src/imported/official/ja/manuscripts.md",
-      "source_text_sha256": "8bdd41d70dddf66b4301f856eaac390eb568aaae4d77c421ef7d1e8d4a349ace"
+      "source_text_sha256": "30a09430120eb14c67bc274b964385010e84e666efbf014a41859ddc765cc464"
     },
     {
       "source": "src/content/invited/french/-index.md",
       "destination": "src/imported/official/ja/invited.md",
-      "source_text_sha256": "3767161fc0fd703b1c73ec5bf54930d0a155bdafcbe31fd2c5b1940105d4e986"
+      "source_text_sha256": "d867ace126854ad8ce8419c31aef7d4fcbd2f1d1e6cb785f1aa576dbbe16f4b9"
     },
     {
       "source": "src/content/presentation/french/-index.md",
@@ -110,7 +110,7 @@
     {
       "source": "src/content/member/french/-index.md",
       "destination": "src/imported/official/ja/members.md",
-      "source_text_sha256": "c8239c8710543194d68efb76a2348343e9d293d0c5bf7f63fd82116a98d2bae2"
+      "source_text_sha256": "41404540e5e99a9917abacfc46334674399660cb2043418daa0150bf7ef8effe"
     },
     {
       "source": "src/content/alumni/french/-index.md",
@@ -130,7 +130,7 @@
     {
       "source": "src/content/homepage/french/-index.md",
       "destination": "src/imported/official/ja/homepage.md",
-      "source_text_sha256": "cc3dc92d1ffff84ce06df0334c0d552b9885c67075115319523fb1f085fae94b"
+      "source_text_sha256": "8a44193878e3d6b64ac5e45ca1fa7ead450990713124a1015f268417fdef1619"
     }
   ],
   "homepage_staff": [
@@ -166,7 +166,7 @@
     ],
     "ja": [
       "物質の原子配列と化学結合を深く理解し，機能発現との相関からDesigned Materialsを実現できれば，新物質開発を飛躍的に加速させることが可能となります．そのためには，計算・計測・解析を統合し，機能発現の起源に迫るとともに，そのメカニズムと普遍的な設計指針を明らかにしていく必要があります．",
-      "東京大学・生産技術研究所・ナノ物質設計工学研究室（Nano Materials Design Laboratory: NMDL）では，人工知能技術，計算機シミュレーション，原子レベル計測およびPhysical AIを融合することで，構造機能相関の深い理解からDesigned Materialsの創出までを一体的に推進し，自律的な物質設計を実現する新たな物質科学のパラダイムの確立を目指しています．"
+      "東京大学・生産技術研究所・ナノ物質設計工学研究室（Nano Materials Design Laboratory: NMDL）では，人工知能技術，計算機シミュレーション，原子レベル計測およびフィジカルAIを融合することで，構造機能相関の深い理解からDesigned Materialsの創出までを一体的に推進し，自律的な物質設計を実現する新たな物質科学のパラダイムの確立を目指しています．"
     ]
   },
   "latest_awards": [

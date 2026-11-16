@@ -111,7 +111,7 @@ Komaba Analysis Core / [東京大学・生産技術研究所・駒場分析コ�
 
 ARIM / [マテリアル先端リサーチインフラ](https://nanonet.mext.go.jp/)
 
-<u>[駒場コモンズラボ](https://sites.google.com/g.ecc.u-tokyo.ac.jp/komaba-commons-lab/)</u>，<u>[駒場分析コア](https://sites.google.com/g.ecc.u-tokyo.ac.jp/iis-materials-core) </u>および<u>[ARIM](https://nanonet.mext.go.jp/)</u>，シンクロトロン等の共同利用設備を活用してPhysical AIや物質解析実験を行っております
+<u>[駒場コモンズラボ](https://sites.google.com/g.ecc.u-tokyo.ac.jp/komaba-commons-lab/)</u>，<u>[駒場分析コア](https://sites.google.com/g.ecc.u-tokyo.ac.jp/iis-materials-core) </u>および<u>[ARIM](https://nanonet.mext.go.jp/)</u>，シンクロトロン等の共同利用設備を活用してフィジカルAIや物質解析実験を行っております
 
 <br>
 

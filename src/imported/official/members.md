@@ -33,6 +33,7 @@ Administrative staff, Yoko Matsuo（秘書・松尾　陽子）
 
 AI-Agent / Research & Web Operations Support, mace-san（maceさん）
 <br>Please contact mace-san via Slack
+<br><small><a href="https://nmdl-mizo.github.io/mace-san-lab/">mace-san-lab ↗</a> — Experimental website (unofficial)</small>
 
 <b>mace-san’s Capabilities (2026.8)：</b>
 
