@@ -10,11 +10,13 @@ draft: false
 1.  **L. Wong**, **Y. R. Jin**, and **T. Mizoguchi**  
     under preparation
 
-1.  **Y. Fujikata** and **T. Mizoguchi**  
-    submitted
+1.  "XANES-Guided Molecular Structure Generation via Conditional Diffusion and Forward Spectral Prediction"  
+    **Y. Fujikata** and **T. Mizoguchi**  
+    submitted [**arxiv**](https://arxiv.org/abs/2611.23725)
 
-1.  **S. Ozawa**, **I. Takahara**, **F. Uesugi**, and **T. Mizoguchi**  
-    submitted
+1.  "Fast closed-loop STEM navigation using vision-language models with typed decisions"  
+    **S. Ozawa**, **I. Takahara**, **F. Uesugi**, and **T. Mizoguchi**  
+    submitted [**arxiv**](https://arxiv.org/abs/2611.23698)
 
 1.  **I. Takahara**, **T. Mizoguchi**, and P. Zhong,  
     submitted
@@ -24,14 +26,14 @@ draft: false
 
 1.  "GPU acceleration of first-principles X-ray absorption spectra: an OpenACC port of XSpectra in Quantum ESPRESSO"  
     **Yinan Wang** and **Teruyasu Mizoguchi**  
-    submitted
+    submitted [**ChemRxiv**](https://chemrxiv.org/doi/full/10.26434/chemrxiv.15012423/v1)
 
 1.  "Electric Fields Turn Vacancy-trapping Grain Boundaries into Li-Ion Pathways in Li2O"  
     **Youjeong Choi**, **Po-Yen Chen**, **Tasuku Sugiura**, and **Teruyasu Mizoguchi**  
     submitted [**arxiv**](https://arxiv.org/abs/2611.17679)
 
-1.  **Y. Wang** and **T. Mizoguchi**  
-    "Symmetry-Gated Sliding: Decoupling Interlayer Translation from Polarization Reversal in Boron Nitride Ferroelectrics"  
+1.  "Symmetry-Gated Sliding: Decoupling Interlayer Translation from Polarization Reversal in Boron Nitride Ferroelectrics"  
+    **Y. Wang** and **T. Mizoguchi**  
     submitted [**arxiv**](https://arxiv.org/abs/2611.09025)
 
 1.  **Y.R. Jin**, **L. Wong**, and **T. Mizoguchi**  
@@ -43,35 +45,35 @@ draft: false
 1.  **Pol Benítez**, T. Ouchi, C. Cazorla, and **Teruyasu Mizoguchi**    
     submitted 
 
-1.  **Y. Wang** and **T. Mizoguchi**  
-    "All-Electron Single-Atom Reference Correction for Absolute Transition Energies in Fixed-Reference PAW-XCH Calculations"  
+1.  "All-Electron Single-Atom Reference Correction for Absolute Transition Energies in Fixed-Reference PAW-XCH Calculations"  
+    **Y. Wang** and **T. Mizoguchi**  
     submitted  [**arxiv**](https://arxiv.org/abs/2608.09216)
 
-1.  **I. Takahara**, K. Nishio, A. Aiba, S. Kobayashi, T. Nakajima, T. Hitosugi, and **T. Mizoguchi**  
-    "Hypothesis-Driven Autonomous Materials Synthesis with Multimodal LLM Agents"  
+1.  "Hypothesis-Driven Autonomous Materials Synthesis with Multimodal LLM Agents"  
+    **I. Takahara**, K. Nishio, A. Aiba, S. Kobayashi, T. Nakajima, T. Hitosugi, and **T. Mizoguchi**  
     submitted [**arxiv**](https://arxiv.org/abs/2609.18598)
 
-1.  **I. Takahara** and **T. Mizoguchi**  
-    "Toward Auditable AI Scientists: A Hypothesis Evolution Protocol for LLM Agents"  
+1.  "Toward Auditable AI Scientists: A Hypothesis Evolution Protocol for LLM Agents"  
+    **I. Takahara** and **T. Mizoguchi**  
     submitted [**arxiv**](https://arxiv.org/abs/2607.09195)
 
-1.  **R. Sahashi**, **P. Y. Chen**, and **T. Mizoguchi**  
-    "Atomistic Origin and Strain Control of the Finite-Temperature Dielectric Response in BaTiO3"  
+1.  "Atomistic Origin and Strain Control of the Finite-Temperature Dielectric Response in BaTiO3"  
+    **R. Sahashi**, **P. Y. Chen**, and **T. Mizoguchi**  
     submitted [**arxiv**](https://arxiv.org/abs/2609.07219)
 
 1.  **L. Wong**, **Y. R. Jin**, and **T. Mizoguchi**  
     submitted
 
-1.  **S. Ozawa**, **I. Takahara**, and **T. Mizoguchi**  
-    "Scale-Dependent Input Representation and Confidence Estimation for LLMs in Materials Property Prediction"  
+1.  "Scale-Dependent Input Representation and Confidence Estimation for LLMs in Materials Property Prediction"  
+    **S. Ozawa**, **I. Takahara**, and **T. Mizoguchi**  
     submitted   [**arxiv**](https://arxiv.org/abs/2605.03515)
 
-1.  **Y. Wang**, **P.Y. Chen**, and **T. Mizoguchi**  
-    "Ultrafast Sliding Ferroelectric Switching in Bilayer Hexagonal Boron Nitride Revealed by Deep Learning Molecular Dynamics"  
+1.  "Ultrafast Sliding Ferroelectric Switching in Bilayer Hexagonal Boron Nitride Revealed by Deep Learning Molecular Dynamics"  
+    **Y. Wang**, **P.Y. Chen**, and **T. Mizoguchi**  
      submitted   [**arxiv**](https://arxiv.org/abs/2604.27342)
 
-1.  **R. Sahashi**, **P. Y. Chen**, and **T. Mizoguchi**  
-    "Origin of Reduced Coercive Field in ScAlN: Synergy of Structural Softening and Dynamic Atomic Correlations"  
+1.  "Origin of Reduced Coercive Field in ScAlN: Synergy of Structural Softening and Dynamic Atomic Correlations"  
+    **R. Sahashi**, **P. Y. Chen**, and **T. Mizoguchi**  
     submitted, (dynamic softening) [**arxiv**](https://arxiv.org/abs/2603.18710)
 
 1.  H.K. Moberg, **T. Mizoguchi**, ...., and A. Hellman  
