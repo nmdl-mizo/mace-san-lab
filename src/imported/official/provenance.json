@@ -1,6 +1,6 @@
 {
   "source_repository": "https://github.com/nmdl-mizo/nmdl-mizo.github.io",
-  "source_commit": "5efbeef4b7397e0c1e5ed0552dee8d7c985d639d",
+  "source_commit": "a92971a31b978e36f2eecae692df92fbac09ab04",
   "files": [
     {
       "source": "src/content/about/english/-index.md",
@@ -20,7 +20,7 @@
     {
       "source": "src/content/manuscript/english/-index.md",
       "destination": "src/imported/official/manuscripts.md",
-      "source_text_sha256": "76a0e3bc905c7f1deb31085a23f373f17d5e7ac013f2258b418c47f3cdc63d45"
+      "source_text_sha256": "e45666302be829035a2fa9b00b3d03871e6a9563e8b4d3978f76ce4b5f723a66"
     },
     {
       "source": "src/content/invited/english/-index.md",
@@ -85,7 +85,7 @@
     {
       "source": "src/content/manuscript/french/-index.md",
       "destination": "src/imported/official/ja/manuscripts.md",
-      "source_text_sha256": "76a0e3bc905c7f1deb31085a23f373f17d5e7ac013f2258b418c47f3cdc63d45"
+      "source_text_sha256": "e45666302be829035a2fa9b00b3d03871e6a9563e8b4d3978f76ce4b5f723a66"
     },
     {
       "source": "src/content/invited/french/-index.md",

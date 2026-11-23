@@ -21,8 +21,9 @@ draft: false
 1.  **I. Takahara**, **T. Mizoguchi**, and P. Zhong,  
     submitted
 
-1.  **K. Miyamoto**, **I. Okuda**, **I. Takahara**, and **T. Mizoguchi**  
-    submitted
+1.  "Generating grain boundary structures at a specified energy with a symmetry-constrained diffusion model"  
+    **K. Miyamoto**, **I. Okuda**, **I. Takahara**, and **T. Mizoguchi**  
+    submitted [**arxiv**](https://arxiv.org/abs/2611.27188)
 
 1.  "GPU acceleration of first-principles X-ray absorption spectra: an OpenACC port of XSpectra in Quantum ESPRESSO"  
     **Yinan Wang** and **Teruyasu Mizoguchi**  
