@@ -13,6 +13,10 @@ draft: false
 1.  **K. Ueyama**, **I. Okuda**, and **T. Mizoguchi**  
     under preparation
 
+1.  "Machine learning for materials characterization" (Invited Review and Perspective)  
+    **T. Mizoguchi**  
+    submitted
+
 1.  **L. Wong**, **Y. R. Jin**, and **T. Mizoguchi**  
     submitted
 
