@@ -7,8 +7,14 @@ draft: false
 ---
  <p align="right"> **Bold** *indicates Mizoguchi Lab. member.* </p>
  
-1.  **L. Wong**, **Y. R. Jin**, and **T. Mizoguchi**  
+1.  **R. Sahashi**, **PY. Chen**, and **T. Mizoguchi**  
     under preparation
+
+1.  **K. Ueyama**, **I. Okuda**, and **T. Mizoguchi**  
+    under preparation
+
+1.  **L. Wong**, **Y. R. Jin**, and **T. Mizoguchi**  
+    submitted
 
 1.  "XANES-Guided Molecular Structure Generation via Conditional Diffusion and Forward Spectral Prediction"  
     **Y. Fujikata** and **T. Mizoguchi**  
@@ -25,9 +31,6 @@ draft: false
     **K. Miyamoto**, **I. Okuda**, **I. Takahara**, and **T. Mizoguchi**  
     submitted [**arxiv**](https://arxiv.org/abs/2611.27188)
 
-1.  "GPU acceleration of first-principles X-ray absorption spectra: an OpenACC port of XSpectra in Quantum ESPRESSO"  
-    **Yinan Wang** and **Teruyasu Mizoguchi**  
-    submitted [**ChemRxiv**](https://chemrxiv.org/doi/full/10.26434/chemrxiv.15012423/v1)
 
 1.  "Electric Fields Turn Vacancy-trapping Grain Boundaries into Li-Ion Pathways in Li2O"  
     **Youjeong Choi**, **Po-Yen Chen**, **Tasuku Sugiura**, and **Teruyasu Mizoguchi**  
@@ -69,9 +72,6 @@ draft: false
     **S. Ozawa**, **I. Takahara**, and **T. Mizoguchi**  
     submitted   [**arxiv**](https://arxiv.org/abs/2605.03515)
 
-1.  "Ultrafast Sliding Ferroelectric Switching in Bilayer Hexagonal Boron Nitride Revealed by Deep Learning Molecular Dynamics"  
-    **Y. Wang**, **P.Y. Chen**, and **T. Mizoguchi**  
-     submitted   [**arxiv**](https://arxiv.org/abs/2604.27342)
 
 1.  "Origin of Reduced Coercive Field in ScAlN: Synergy of Structural Softening and Dynamic Atomic Correlations"  
     **R. Sahashi**, **P. Y. Chen**, and **T. Mizoguchi**  
@@ -88,7 +88,7 @@ draft: false
 
 1.   "Achieving Robust Extrapolation in Materials Property Prediction via Decoupled Transfer Learning"  
      **T. Sugiura** and **T. Mizoguchi**  
-    *PRX intelligence*, (2026) in press [**arxiv**](https://arxiv.org/abs/2602.18054), [**GitHub**](https://github.com/nmdl-mizo/decoupled-gnn-transfer-learning)
+    *PRX Intelligence*, 1 (2026) 023019-1-15 [**Open Access**](https://journals.aps.org/prxintelligence/abstract/10.1103/pbrg-x848), [**Press Release**](https://www.eurekalert.org/news-releases/1152730), [**arxiv**](https://arxiv.org/abs/2602.18054), [**GitHub**](https://github.com/nmdl-mizo/decoupled-gnn-transfer-learning)
 
 1.   "Inverse Materials Design via Joint Generation of Crystal Structures and Local Electronic Descriptors"  
      **I. Okuda**, **I. Takahara**, and **T. Mizoguchi**  
@@ -1345,3 +1345,13 @@ draft: false
 1. “First-principles calculations of electron-energy-loss near-edge structure and near-edge x-ray-absorption fine structure of BN polytypes using model clusters”  
      I. Tanaka, H. Araki, M. Yoshiya, **T. Mizoguchi**, F. Oba, H. Adachi  
      *Phys. Rev B, 60 (1999) 4944.*  
+
+## プレプリント
+
+1.  "GPU acceleration of first-principles X-ray absorption spectra: an OpenACC port of XSpectra in Quantum ESPRESSO"  
+    **Yinan Wang** and **Teruyasu Mizoguchi**  
+    [**ChemRxiv**](https://chemrxiv.org/doi/full/10.26434/chemrxiv.15012423/v1)
+
+1.  "Ultrafast Sliding Ferroelectric Switching in Bilayer Hexagonal Boron Nitride Revealed by Deep Learning Molecular Dynamics"  
+    **Y. Wang**, **P.Y. Chen**, and **T. Mizoguchi**  
+    [**arxiv**](https://arxiv.org/abs/2604.27342)

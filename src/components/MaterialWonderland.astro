@@ -40,6 +40,13 @@ const rooms = [
       <h2 id="objective-title">Designed <em>Materials.</em></h2>
       <div class="objectives">{provenance.homepage_objectives.ja.map(text => <p>{text}</p>)}</div>
       <a class="archive-link" href={url('/research/')}>AI・Physical AI・計算・原子レベル計測の研究内容へ ↗</a>
+      <h3 class="awards-title">RESEARCH NEWS / 最近の研究成果</h3>
+      <div class="objectives">
+        <p lang="ja"><strong>外挿誤差を3分の1以下に．</strong> 表現学習と物性予測を分離する転移学習により，評価した外挿テストでCGCNNに対する予測誤差を68%削減しました．この研究成果が<em>PRX Intelligence</em>に掲載され，プレスリリースしました．</p>
+        <p lang="en"><strong>Extrapolation error cut to less than one-third.</strong> Our decoupled transfer learning approach reduced prediction error by 68% compared with CGCNN in the evaluated extrapolation test. This work has been published in <em>PRX Intelligence</em>, with a press release.</p>
+      </div>
+      <a class="archive-link" href="https://journals.aps.org/prxintelligence/abstract/10.1103/pbrg-x848">Open Access ↗</a>
+      <a class="archive-link" href="https://www.eurekalert.org/news-releases/1152730">Press Release ↗</a>
       <h3 class="awards-title">RECENT AWARDS / 本家掲載の受賞情報</h3>
       <div class="award-list">{provenance.latest_awards.map((text,i) => <a href={url('/publications/#awards')}><span>0{i+1}</span><p>{text}</p><span>↗</span></a>)}</div>
       <a class="archive-link" href={url('/news/')}>本家から取り込んだニュースの全記録へ ↗</a>
